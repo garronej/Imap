@@ -1,0 +1,13 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="WpfPrototype3Screens.IMAPLogo"
+	x:Name="UserControl" d:DesignHeight="168" Width="442">
+
+	<Grid x:Name="LayoutRoot">
+		<TextBlock Style="{DynamicResource BasicTextBlock-Sketch}" Text="IMAP" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="96" Foreground="Black" Margin="104.82,20.156,93.62,20.156" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light" Width="243.56"/>
+	</Grid>
+</UserControl>

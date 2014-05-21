@@ -1,0 +1,14 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:WpfPrototype3Screens" x:Name="WpfPrototype3Screens_Screen_2_Name"
+	mc:Ignorable="d"
+	x:Class="WpfPrototype3Screens.Screen_2"
+	Width="640" Height="1136">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Image HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640" Source="4street.jpg"/>
+		<local:Contex_Button HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="0,1068,0,0"/>
+	</Grid>
+</UserControl>

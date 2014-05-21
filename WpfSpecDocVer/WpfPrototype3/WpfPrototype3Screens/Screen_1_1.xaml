@@ -1,0 +1,89 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:WpfPrototype3Screens" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Name="WpfPrototype3Screens_Screen_1_1_Name"
+	mc:Ignorable="d"
+	x:Class="WpfPrototype3Screens.Screen_1_1"
+	Width="602.667" Height="1001">
+
+	<Grid x:Name="LayoutRoot" Background="#FFE6E6E6" HorizontalAlignment="Left" Width="602.667" Height="1004" VerticalAlignment="Top">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="285*"/>
+			<RowDefinition Height="217*"/>
+		</Grid.RowDefinitions>
+		<Image HorizontalAlignment="Left" Height="994" VerticalAlignment="Top" Width="602" Source="blue.jpg" Opacity="0.53" Grid.RowSpan="2"/>
+		<Rectangle Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="545.744" Margin="10,489.256,0,-31" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="582.667" Grid.RowSpan="2"/>
+		<Rectangle Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="230" Margin="112,176.5,0,0" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="380"/>
+		<Rectangle Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="147" Margin="10,10,0,0" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="317.5"/>
+		<Image HorizontalAlignment="Left" Height="147" Margin="362.667,10,0,0" VerticalAlignment="Top" Width="230" Source="ensimagLogo.gif"/>
+		<TextBlock HorizontalAlignment="Left" Height="71" Margin="46,23,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" Text="E.N.S.I.M.A.G" VerticalAlignment="Top" Width="247" FontSize="42.667" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei UI Light"/>
+		<Image HorizontalAlignment="Left" Height="173" Margin="130,191,0,0" VerticalAlignment="Top" Width="346" Source="4.jpg"/>
+		<TextBlock HorizontalAlignment="Left" Height="37.5" Margin="240.5,369,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" Text="Street view" VerticalAlignment="Top" Width="130" FontSize="26.667" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei UI Light"/>
+		<ed:BlockArrow Fill="{DynamicResource BaseBackground-Sketch}" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Left" Height="37.043" Margin="446.159,332.52,0,0" Orientation="Down" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="32.52" RenderTransformOrigin="0.5,0.5" Opacity="0.59">
+			<ed:BlockArrow.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-42.875"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</ed:BlockArrow.RenderTransform>
+		</ed:BlockArrow>
+		<ed:BlockArrow Fill="{DynamicResource BaseBackground-Sketch}" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Left" Height="37.043" Margin="446.159,185.52,0,0" Orientation="Down" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="32.52" RenderTransformOrigin="0.5,0.5" Opacity="0.59">
+			<ed:BlockArrow.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-132.195"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</ed:BlockArrow.RenderTransform>
+		</ed:BlockArrow>
+		<ed:BlockArrow Fill="{DynamicResource BaseBackground-Sketch}" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Left" Height="37.043" Margin="127.492,185.853,0,0" Orientation="Down" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="32.52" RenderTransformOrigin="0.5,0.5" Opacity="0.59">
+			<ed:BlockArrow.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-226.037"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</ed:BlockArrow.RenderTransform>
+		</ed:BlockArrow>
+		<ed:BlockArrow Fill="{DynamicResource BaseBackground-Sketch}" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Left" Height="37.043" Margin="127.492,331.853,0,0" Orientation="Down" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="32.52" RenderTransformOrigin="0.5,0.5" Opacity="0.59">
+			<ed:BlockArrow.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-315.701"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</ed:BlockArrow.RenderTransform>
+		</ed:BlockArrow>
+		<Rectangle Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="40.756" Margin="112,429.5,0,0" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="380"/>
+		<TextBlock HorizontalAlignment="Left" Margin="127.466,443,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" Text="681 Rue de la Passerelle, 38400 Saint-Martin-d'Hères" VerticalAlignment="Top" Height="27.256" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei UI Light" FontSize="14.667"/>
+		<Button Content="" HorizontalAlignment="Left" Height="56.156" Margin="497,414.1,0,0" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Top" Width="95.667"/>
+		<ed:BlockArrow Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="53.556" Margin="497,416.7,0,0" Orientation="Right" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="93.3"/>
+		<TextBlock HorizontalAlignment="Left" Height="58" Margin="33,99,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Top" Width="286.5" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei UI Light" FontSize="14.667"><Run Text="Ecole natonial superieur de l'informatique "/><LineBreak/><Run Text="     "/><Run Text="et"/><Run Text=" "/><Run Text=" des mathematiques appliquer"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Height="545.744" Margin="10,489.256,0,-31" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Top" Width="582.667" Grid.RowSpan="2" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei UI Light"><Run FontSize="48" Text="Bug Buster / Permanence"/><LineBreak/><LineBreak/><Run FontSize="26.667" Text=" "/><Run FontSize="26.667" Text="Monday to Thursday              "/><Run FontSize="26.667" Text=" "/><Run FontSize="26.667" Text="    "/><Run FontSize="26.667" Text="  "/><Run FontSize="26.667" Text="19"/><Run FontSize="26.667" Text=":0"/><Run FontSize="26.667" Text="0 - 22"/><Run FontSize="26.667" Text=":"/><Run FontSize="26.667" Text="00"/><LineBreak/><Run FontSize="26.667" Text=" Friday&#x9;&#x9;&#x9;&#x9;&#x9;      19:30"/><Run FontSize="26.667" Text=" - 21"/><Run FontSize="26.667" Text=":00"/><LineBreak/><Run FontSize="26.667" Text=" Weekend                         "/><Run FontSize="26.667" Text=" "/><Run FontSize="26.667" Text="           19h30 - 21h30"/><LineBreak/><LineBreak/><Run FontSize="32" Text="      "/><Run FontSize="26.667" Text="Student at your disposition to help you solve problems"/><LineBreak/><Run FontSize="26.667" Text=" with tour personal computer. During those hours school's  "/><LineBreak/><Run FontSize="26.667" Text="  computer are at your disposition. "/><LineBreak/><Run FontSize="48" Text="    "/><LineBreak/><Run FontSize="48" Text="Administrati"/><Run FontSize="48" Text="o"/><Run FontSize="48" Text="n"/><Run FontSize="48" Text=" "/><Run FontSize="48" Text=" "/><Run FontSize="48" Text="  "/><Run FontSize="32" Text="H01, H01, H02"/><LineBreak/><Run FontSize="26.667" Text="Monday to Thursd"/><Run FontSize="26.667" Text="ay"/><Run FontSize="26.667" Text="   "/><Run FontSize="26.667" Text=" "/><Run FontSize="26.667" Text="                13h30 - 16h30"/><LineBreak/><LineBreak/></TextBlock>
+		<Rectangle Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="406.5" Margin="592.667,0,0,0" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="8" Opacity="0.57"/>
+		<TextBlock HorizontalAlignment="Left" Margin="511.2,434.05,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Top" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei UI Light"><Run Text="GO "/><Run Text="MAP"/></TextBlock>
+		<Rectangle Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="514.744" Margin="607.667,491.843,-607.667,-2.587" Grid.RowSpan="2" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="602.667"/>
+		<Rectangle Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="43.144" Margin="607.667,491.843,-607,0" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="602"/>
+		<ed:RegularPolygon Fill="{DynamicResource BaseBackground-Sketch}" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Left" Height="17.278" InnerRadius="1" Margin="310.975,506.631,0,0" PointCount="3" Stretch="Fill" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="20.767" RenderTransformOrigin="0.46,0.64">
+			<ed:RegularPolygon.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="180.378"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</ed:RegularPolygon.RenderTransform>
+		</ed:RegularPolygon>
+		<local:Contex_Button HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="0,366,0,0" Width="602.667" Grid.Row="1"/>
+		<TextBlock HorizontalAlignment="Left" Margin="302.333,491.843,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Top" Text="Close"/>
+		<RadioButton Content="ENSIMAG" HorizontalAlignment="Left" Margin="265.533,33.6,0,0" Grid.Row="1" Style="{DynamicResource RadioButton-Sketch}" VerticalAlignment="Top" Height="36.663" FontSize="32" Width="132.14" IsChecked="True"/>
+		<RadioButton Content="PHELMA" HorizontalAlignment="Left" Margin="265.533,119.6,0,0" Grid.Row="1" Style="{DynamicResource RadioButton-Sketch}" VerticalAlignment="Top" Height="36.663" FontSize="32" Width="132.14"/>
+		<RadioButton Content="UFR" HorizontalAlignment="Left" Margin="265.533,204.8,0,0" Grid.Row="1" Style="{DynamicResource RadioButton-Sketch}" VerticalAlignment="Top" Height="36.663" FontSize="32" Width="132.14"/>
+	</Grid>
+</UserControl>

@@ -1,0 +1,28 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:WpfPrototype3Screens" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" x:Name="WpfPrototype3Screens_Screen_1_Name"
+	mc:Ignorable="d"
+	x:Class="WpfPrototype3Screens.Screen_1"
+	Width="640" Height="1136">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Image HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640" Source="blue.jpg" Stretch="Fill"/>
+		<local:IMAPLogo HorizontalAlignment="Center" VerticalAlignment="Center" Width="631" Margin="9,10,0,903" FontSize="14.667" Height="223"/>
+		<local:CustomSearch d:IsPrototypingComposition="True" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,233,0,681"/>
+		<Grid HorizontalAlignment="Left" Height="459" Margin="10,667,0,0" VerticalAlignment="Top" Width="620">
+			<Rectangle Fill="#FFC9C9C9" HorizontalAlignment="Left" Height="425.8" Stroke="Black" VerticalAlignment="Top" Width="620" Margin="0,33.2,0,0" Opacity="0.495"/>
+			<TextBox HorizontalAlignment="Left" Height="356.6" Margin="10,65.8,0,0" Style="{DynamicResource Note-Sketch}" TextWrapping="Wrap" Text="Students! Imap can give&#xD;&#xA;you targeted information &#xD;&#xA;based on you schedule.&#xA;You are alredy registred, just login for more features." VerticalAlignment="Top" Width="431.4" FontSize="40"/>
+			<Button Content="LogIn" HorizontalAlignment="Left" Height="85.2" Margin="474,337.2,0,0" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Top" Width="136" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<pi:NavigateToScreenAction TargetScreen="WpfPrototype3Screens.Login_screen"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Button>
+		</Grid>
+		<local:NexToYou d:IsPrototypingComposition="True" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="9,460,9,430.4" Height="245.6"/>
+		<TextBlock HorizontalAlignment="Left" Margin="193.8,182.4,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" Text="Your daily assistan in the campus" VerticalAlignment="Top" Foreground="Black" FontSize="21.333"/>
+	</Grid>
+</UserControl>

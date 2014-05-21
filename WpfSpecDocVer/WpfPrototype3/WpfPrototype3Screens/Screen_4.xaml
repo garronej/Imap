@@ -1,0 +1,63 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" xmlns:local="clr-namespace:WpfPrototype3Screens" x:Name="WpfPrototype3Screens_Screen_4_Name"
+	mc:Ignorable="d"
+	x:Class="WpfPrototype3Screens.Screen_4"
+	Width="640" Height="1129.6">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Image HorizontalAlignment="Left" Height="1129.6" VerticalAlignment="Top" Width="640" Source="pack://siteoforigin:,,,/path.png"/>
+		<ed:Arc ArcThickness="20" ArcThicknessUnit="Pixel" EndAngle="360" Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="68.8" Margin="359.6,719.2,0,0" Stretch="None" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" StartAngle="0" VerticalAlignment="Top" Width="72"/>
+		<ed:Arc ArcThickness="20" ArcThicknessUnit="Pixel" EndAngle="360" Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="68.8" Margin="615.6,472.8,-47.6,0" Stretch="None" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" StartAngle="0" VerticalAlignment="Top" Width="72" Opacity="0.495"/>
+		<ed:Arc ArcThickness="20" ArcThicknessUnit="Pixel" EndAngle="360" Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="68.8" Margin="327.6,243.6,0,0" Stretch="None" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" StartAngle="0" VerticalAlignment="Top" Width="72" Opacity="0.495"/>
+		<Button Content="Amphie WEIL" HorizontalAlignment="Left" Height="40" Margin="342,793,0,0" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Top" Width="110.4" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light" FontSize="14.667"/>
+		<ed:Arc ArcThickness="20" ArcThicknessUnit="Pixel" EndAngle="360" Fill="#FFFFA3A3" HorizontalAlignment="Left" Height="68.8" Margin="228.8,80.8,0,0" Stretch="None" Stroke="Black" StrokeThickness="2" StartAngle="0" VerticalAlignment="Top" Width="74.133"/>
+		<TextBlock HorizontalAlignment="Left" Height="23.466" Margin="222.973,102.097,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" Text="You are here" VerticalAlignment="Top" Width="98.565" Foreground="White" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light" RenderTransformOrigin="0.5,0.5" Background="#FF0F0F0F" Opacity="0.685">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-0.883"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+		<Rectangle Fill="#FFFFA3A3" HorizontalAlignment="Left" Height="641.969" Margin="327.752,112.886,0,0" Stroke="Black" StrokeThickness="2" VerticalAlignment="Top" Width="4.8" RenderTransformOrigin="0.5,0.5" Opacity="0.505">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-11.941"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="448.844" Margin="627.333,294.067,0,0" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="8.4" Opacity="0.5"/>
+		<Rectangle Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="6.55" Margin="340.831,1.8,0,0" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="174.469" Opacity="0.5"/>
+		<local:Contex_Button HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="0,1061.6,0,0"/>
+		<Rectangle Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="68" Margin="201.5,1061.6,0,0" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="238.4"/>
+		<TextBlock HorizontalAlignment="Left" Height="26.1" Margin="285,1093.7,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" Text="Other places" VerticalAlignment="Top" Width="73.6" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light" FontSize="12"/>
+		<ed:RegularPolygon Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="22.808" InnerRadius="1" PointCount="3" Stretch="Fill" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" VerticalAlignment="Top" Width="31.494" Margin="303.203,1066.796,0,0" RenderTransformOrigin="0.5,0.5">
+			<ed:RegularPolygon.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="-1"/>
+					<SkewTransform/>
+					<RotateTransform Angle="359.108"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</ed:RegularPolygon.RenderTransform>
+		</ed:RegularPolygon>
+		<TextBlock HorizontalAlignment="Left" Height="23.466" Margin="347.773,744.497,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" Text="150m ~2min" VerticalAlignment="Top" Width="98.565" Foreground="White" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light" RenderTransformOrigin="0.5,0.5" Background="#FF0F0F0F" Opacity="0.685">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-0.883"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+	</Grid>
+</UserControl>

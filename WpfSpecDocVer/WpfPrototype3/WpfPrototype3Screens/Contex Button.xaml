@@ -1,0 +1,45 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+	mc:Ignorable="d"
+	x:Class="WpfPrototype3Screens.Contex_Button"
+	x:Name="UserControl"
+	d:DesignWidth="570" Height="68" Width="640">
+
+	<Grid x:Name="LayoutRoot" Width="640">
+		<Button Content="Menu" HorizontalAlignment="Right" Style="{DynamicResource Button-Sketch}" Width="200.8" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<i:Interaction.Behaviors>
+						<ei:ConditionBehavior>
+							<ei:ConditionalExpression>
+								<ei:ComparisonCondition LeftOperand="{Binding isLoged, Source={StaticResource userId}}" RightOperand="false"/>
+							</ei:ConditionalExpression>
+						</ei:ConditionBehavior>
+					</i:Interaction.Behaviors>
+					<pi:NavigateToScreenAction TargetScreen="WpfPrototype3Screens.Screen_1"/>
+				</i:EventTrigger>
+				<i:EventTrigger EventName="Click">
+					<i:Interaction.Behaviors>
+						<ei:ConditionBehavior>
+							<ei:ConditionalExpression>
+								<ei:ComparisonCondition LeftOperand="{Binding isLoged, Source={StaticResource userId}}" RightOperand="true"/>
+							</ei:ConditionalExpression>
+						</ei:ConditionBehavior>
+					</i:Interaction.Behaviors>
+					<pi:NavigateToScreenAction TargetScreen="WpfPrototype3Screens.Home_Loged"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Back" HorizontalAlignment="Left" Style="{DynamicResource Button-Sketch}" Width="200.8" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateBackAction/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+	</Grid>
+</UserControl>

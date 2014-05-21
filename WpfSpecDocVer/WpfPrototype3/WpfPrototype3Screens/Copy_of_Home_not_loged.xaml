@@ -1,0 +1,26 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:WpfPrototype3Screens" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" x:Name="WpfPrototype3Screens_Screen_1_Name"
+	mc:Ignorable="d"
+	x:Class="WpfPrototype3Screens.Copy_of_Home_not_loged"
+	Width="640" Height="1136">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Image HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640" Source="blue.jpg" Stretch="Fill"/>
+		<local:IMAPLogo HorizontalAlignment="Center" VerticalAlignment="Center" Width="631" Margin="9,10,0,903" FontSize="14.667" Height="223"/>
+		<local:CustomSearch d:IsPrototypingComposition="True" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,233,0,681"/>
+		<Grid HorizontalAlignment="Left" Height="459" Margin="10,667,0,0" VerticalAlignment="Top" Width="620"/>
+		<local:NexToYou d:IsPrototypingComposition="True" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="9,465,9,425.4" Height="245.6"/>
+		<TextBlock HorizontalAlignment="Left" Margin="272.2,191.776,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Top" Foreground="Black" FontSize="29.333"><Run Text="Hi "/><Run Text="Dupon"/><Run Text="!"/></TextBlock>
+		<Button Content="Logout" HorizontalAlignment="Left" Height="51.6" Margin="527.6,10,0,0" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Top" Width="102.4"/>
+		<Rectangle Fill="#FFC9C9C9" HorizontalAlignment="Left" Height="420.4" Margin="10,705.6,0,0" Stroke="Black" VerticalAlignment="Top" Width="620" Opacity="0.5"/>
+		<Button Content="Full schedule (ADE)" HorizontalAlignment="Left" Height="81.2" Margin="17.2,1038.6,0,0" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Top" Width="300.4" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light"/>
+		<Rectangle Fill="#FFC9C9C9" HorizontalAlignment="Left" Height="323" Margin="17.2,710.6,0,0" Stroke="Black" VerticalAlignment="Top" Width="488.8"/>
+		<Button Content="Info about your university(s)" HorizontalAlignment="Left" Height="81.2" Margin="322.6,1038.6,0,0" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Top" Width="300.4" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light"/>
+		<Button Content="  See&#xD;&#xA;on the &#xD;&#xA; MAP" HorizontalAlignment="Left" Height="323" Margin="511,710.6,0,0" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Top" Width="112" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light"/>
+		<TextBlock HorizontalAlignment="Left" Height="323" Margin="17.2,710.6,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Top" Width="488.8" TextAlignment="Center" FontSize="21.333" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light" Foreground="Black"><LineBreak/><Run/><LineBreak/><Run Text="Engineering of Human Computer Interaction"/><LineBreak/><Run Text="TP"/><LineBreak/><Run/><LineBreak/><Run Text="ENSIMAG"/><Run Text=" "/><Run Text="-"/><Run Text=" "/><Run Text="E301"/><LineBreak/><Run/><LineBreak/><Run Text="François Bérard, Gaëlle Calvary"/><LineBreak/><Run/><LineBreak/><Run Text="14:00-15:30"/><LineBreak/><Run/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Margin="17.2,710.6,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" Text="Next :" VerticalAlignment="Top" FontSize="26.667" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light"/>
+	</Grid>
+</UserControl>

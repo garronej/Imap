@@ -1,0 +1,18 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:local="clr-namespace:WpfPrototype3Screens"
+	mc:Ignorable="d"
+	x:Class="WpfPrototype3Screens.NearYou"
+	x:Name="UserControl"
+	d:DesignWidth="620" d:DesignHeight="257">
+
+	<Grid x:Name="LayoutRoot">
+		<Grid HorizontalAlignment="Left" Height="257" VerticalAlignment="Top" Width="620">
+			<ListBox HorizontalAlignment="Left" Height="190" Margin="28,29,0,0" Style="{DynamicResource ListBox-Sketch}" VerticalAlignment="Top" Width="358"/>
+			<Button Content="See more" HorizontalAlignment="Left" Height="64" Margin="422,155,0,0" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Top" Width="160"/>
+		</Grid>
+	</Grid>
+</UserControl>
