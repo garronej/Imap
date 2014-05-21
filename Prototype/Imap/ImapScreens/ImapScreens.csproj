@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ExpressionBlendVersion>12.0.50429.0</ExpressionBlendVersion>
+    <ExpressionBlendVersion>12.0.50320.0</ExpressionBlendVersion>
     <ProjectGuid>{4e1b1da5-8e7b-486d-b781-176e444a7f38}</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -64,10 +64,55 @@
     <Reference Include="Microsoft.Expression.Prototyping.SketchControls" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Google_Calendar.xaml.cs">
+      <DependentUpon>Google_Calendar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Logged.xaml.cs">
+      <DependentUpon>Home_Logged.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Map.xaml.cs">
+      <DependentUpon>Map.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Place_data.xaml.cs">
+      <DependentUpon>Place_data.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="School_data.xaml.cs">
+      <DependentUpon>School_data.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Screen_1.xaml.cs">
       <DependentUpon>Screen_1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Screen_1_1.xaml.cs">
+      <DependentUpon>Screen_1_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="_60_view.xaml.cs">
+      <DependentUpon>_60_view.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Google_Calendar.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Home_Logged.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Map.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Place_data.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="School_data.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Screen_1.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen_1_1.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -79,6 +124,10 @@
     <Compile Include="..\Properties\Version.cs">
       <Link>Properties\Version.cs</Link>
     </Compile>
+    <Page Include="_60_view.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Resource Include="Fonts\BuxtonSketch.ttf" />
     <Resource Include="Fonts\SketchFlow Print.ttf" />
     <Resource Include="Fonts\SegoeMarker.ttf" />

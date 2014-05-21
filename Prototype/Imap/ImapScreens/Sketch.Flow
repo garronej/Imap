@@ -6,17 +6,172 @@
     <Screen>
       <Type>Navigation</Type>
       <ClassName>ImapScreens.Screen_1</ClassName>
-      <DisplayName>Screen 1</DisplayName>
+      <DisplayName>Home not logged</DisplayName>
       <FileName>Screen_1.xaml</FileName>
       <Annotations />
       <Position>
-        <X>0</X>
-        <Y>0</Y>
+        <X>-2</X>
+        <Y>65</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>ImapScreens.Screen_1_1</ClassName>
+      <DisplayName>Login Screen</DisplayName>
+      <FileName>Screen_1_1.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>90</X>
+        <Y>-48</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>ImapScreens.Home_Logged</ClassName>
+      <DisplayName>Home Logged</DisplayName>
+      <FileName>Home_Logged.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>232</X>
+        <Y>14</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>ImapScreens.School_data</ClassName>
+      <DisplayName>School data</DisplayName>
+      <FileName>School_data.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>327</X>
+        <Y>-57</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>ImapScreens._60_view</ClassName>
+      <DisplayName>360 view</DisplayName>
+      <FileName>_60_view.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>200</X>
+        <Y>-82</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>ImapScreens.Place_data</ClassName>
+      <DisplayName>Place data</DisplayName>
+      <FileName>Place_data.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>124</X>
+        <Y>81</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>ImapScreens.Map</ClassName>
+      <DisplayName>Map</DisplayName>
+      <FileName>Map.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>142</X>
+        <Y>129</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>ImapScreens.Google_Calendar</ClassName>
+      <DisplayName>Google Calendar</DisplayName>
+      <FileName>Google_Calendar.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>389</X>
+        <Y>70</Y>
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
   </Screens>
-  <Connections />
+  <Connections>
+    <Connection>
+      <Source>ImapScreens.Screen_1</Source>
+      <Target>ImapScreens.Screen_1_1</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Screen_1_1</Source>
+      <Target>ImapScreens.Home_Logged</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Home_Logged</Source>
+      <Target>ImapScreens.School_data</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.School_data</Source>
+      <Target>ImapScreens._60_view</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Home_Logged</Source>
+      <Target>ImapScreens.Place_data</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Place_data</Source>
+      <Target>ImapScreens.Map</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Home_Logged</Source>
+      <Target>ImapScreens.Google_Calendar</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Home_Logged</Source>
+      <Target>ImapScreens.Screen_1</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Screen_1</Source>
+      <Target>ImapScreens.Map</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Home_Logged</Source>
+      <Target>ImapScreens.Map</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+  </Connections>
   <PrototypeRevision>0</PrototypeRevision>
   <BrandingText>Microsoft SketchFlow Prototype</BrandingText>
   <RuntimeOptions>
@@ -61,7 +216,10 @@
     </VisualTag>
   </VisualTags>
   <ViewState>
-    <Zoom>1</Zoom>
-    <Center xsi:nil="true" />
+    <Zoom>0.75</Zoom>
+    <Center>
+      <X>321.17333333333329</X>
+      <Y>46.797782135076254</Y>
+    </Center>
   </ViewState>
 </Data>
