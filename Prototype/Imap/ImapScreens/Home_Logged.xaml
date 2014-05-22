@@ -10,11 +10,6 @@
 	Width="640" Height="1130">
 
 	<Grid x:Name="LayoutRoot" Background="White">
-<<<<<<< HEAD
-		<local:LayoutRoot HorizontalAlignment="Left" Margin="0,0,0,-6" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
-		<local:Search_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
-		<local:Navigate_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
-=======
 		<Grid.RowDefinitions>
 			<RowDefinition Height="201*"/>
 			<RowDefinition Height="364*"/>
@@ -31,6 +26,5 @@
 		<Grid HorizontalAlignment="Left" Height="257" Margin="10,200,0,0" Grid.Row="1" VerticalAlignment="Top" Width="620">
 			<Button Content="More" Height="237" Margin="460,10,0,0" VerticalAlignment="Top"/>
 		</Grid>
->>>>>>> afc57a376a3d2385f8d1fd1e0d679a11ec488b86
 	</Grid>
 </UserControl>
