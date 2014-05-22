@@ -9,6 +9,8 @@
 	Width="640" Height="1130">
 
 	<Grid x:Name="LayoutRoot" Background="White">
-		<Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+		<Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100">
+			<local:IMAPLogo HorizontalAlignment="Left" Height="171" Margin="101,22,-448,-93" VerticalAlignment="Top" Width="447" d:IsPrototypingComposition="True"/>
+		</Grid>
 	</Grid>
 </UserControl>

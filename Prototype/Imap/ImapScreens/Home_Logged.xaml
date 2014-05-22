@@ -10,8 +10,27 @@
 	Width="640" Height="1130">
 
 	<Grid x:Name="LayoutRoot" Background="White">
+<<<<<<< HEAD
 		<local:LayoutRoot HorizontalAlignment="Left" Margin="0,0,0,-6" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
 		<local:Search_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
 		<local:Navigate_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
+=======
+		<Grid.RowDefinitions>
+			<RowDefinition Height="201*"/>
+			<RowDefinition Height="364*"/>
+		</Grid.RowDefinitions>
+		<local:LayoutRoot HorizontalAlignment="Left" Margin="0,0,0,-6" VerticalAlignment="Top" d:IsPrototypingComposition="True" Grid.RowSpan="2"/>
+		<local:Search_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="108,178,0,0" Width="424"/>
+		<Grid HorizontalAlignment="Left" Height="256" Margin="0,462,0,0" VerticalAlignment="Top" Width="640" Grid.Row="1">
+			<Button Content="Full Schedule(ADE)" HorizontalAlignment="Left" Height="72" Margin="10,174,0,0" VerticalAlignment="Top" Width="319"/>
+			<Button Content="Information on your university" HorizontalAlignment="Left" Height="72" Margin="334,174,0,0" VerticalAlignment="Top" Width="296"/>
+			<Button Content="See on the map" HorizontalAlignment="Left" Height="159" Margin="470,10,0,0" VerticalAlignment="Top" Width="160"/>
+			<TextBox HorizontalAlignment="Left" Height="159" Margin="10,10,0,0" TextWrapping="Wrap" Text="Next" VerticalAlignment="Top" Width="455"/>
+		</Grid>
+		<Button Content="Logout" HorizontalAlignment="Left" Height="82" Margin="439,10,0,0" VerticalAlignment="Top" Width="191"/>
+		<Grid HorizontalAlignment="Left" Height="257" Margin="10,200,0,0" Grid.Row="1" VerticalAlignment="Top" Width="620">
+			<Button Content="More" Height="237" Margin="460,10,0,0" VerticalAlignment="Top"/>
+		</Grid>
+>>>>>>> afc57a376a3d2385f8d1fd1e0d679a11ec488b86
 	</Grid>
 </UserControl>

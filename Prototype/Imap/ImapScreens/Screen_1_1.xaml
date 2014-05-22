@@ -8,9 +8,37 @@
 	x:Class="ImapScreens.Screen_1_1"
 	Width="640" Height="1136">
 	<Grid HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640">
+<<<<<<< HEAD
 		<local:LayoutRoot HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
 		<TextBlock Height="171" Margin="109,10,84,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="IMAP" VerticalAlignment="Top" Width="447" FontFamily="Portable User Interface" TextAlignment="Center" LineHeight="96" FontSize="96" Foreground="#FF252323"/>
 		<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="564" Margin="58,162,0,0" VerticalAlignment="Top" Width="521"/>
 		<local:Navigate_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="0,1064,0,0"/>
+=======
+		<Grid HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640">
+			<Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+			<local:LayoutRoot HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="-10,10,0,-10"/>
+			<local:IMAPLogo Margin="109,10,84,955" d:IsPrototypingComposition="True"/>
+			<Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100">
+				<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="334" Margin="49,194,-470,-428" VerticalAlignment="Top" Width="521" Cursor="SizeNESW" Background="#FFAED1D8">
+					<Border BorderBrush="Black" BorderThickness="1"/>
+				</Border>
+				<RadioButton Content="Universite Joseph Fourier" IsChecked="True" FontSize="21.333" GroupName="university" HorizontalAlignment="Left" BorderThickness="1" Margin="101,223,-411,-157" Width="410" Cursor="SizeNESW"/>
+				<RadioButton Content="Universite Pierre Mendes" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="101,272,-299,-219" FontSize="21.333" Height="47" Width="298"/>
+				<RadioButton Content="Universite de Savoie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,323,-274,-262" FontSize="21.333" Height="39" Width="272"/>
+				<RadioButton Content="Universite Stendhal" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" Height="36" Margin="101,367,-253,-303" Width="252"/>
+				<RadioButton Content="Grenoble INP" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" Margin="102,411,-299,-344" Width="297"/>
+				<RadioButton Content="Science Po Grenoble" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" Margin="102,458,-274,-391" Width="272"/>
+			</Grid>
+			<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="340" VerticalAlignment="Top" Width="520" Margin="50,548,0,0" Background="#FFB4D6D6">
+				<Grid x:Name="LoginPage" Margin="21,89,27,31">
+					<TextBlock HorizontalAlignment="Left" Height="104" Margin="48,46,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light" FontSize="21.333" Text="Username  Password"/>
+					<Button Content="Reset" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="296,150,0,0" Height="30"/>
+					<Button Content="Login" HorizontalAlignment="Left" Height="30" Margin="172,149,0,0" VerticalAlignment="Top" Width="100"/>
+				</Grid>
+			</Border>
+			<TextBox HorizontalAlignment="Left" Height="34" Margin="242,682,0,0" Style="{StaticResource BasicTextBox-Sketch}" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="228" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light"/>
+			<PasswordBox HorizontalAlignment="Left" Height="30" Margin="242,742,0,0" Style="{StaticResource PasswordBox-Sketch}" VerticalAlignment="Top" Width="228" Password="pqpassword"/>
+		</Grid>
+>>>>>>> afc57a376a3d2385f8d1fd1e0d679a11ec488b86
 	</Grid>
 </UserControl>
