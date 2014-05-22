@@ -3,9 +3,45 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Home_Logged"
 	Width="640" Height="480">
 
-	<Grid x:Name="LayoutRoot" Background="White"/>
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Grid Margin="10,299,10,10">
+			<Button Content="Full Schedule(ADE)" HorizontalAlignment="Left" Height="58" Margin="10,123,0,0" VerticalAlignment="Top" Width="281">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<pi:NavigateToScreenAction TargetScreen="ImapScreens.Google_Calendar"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Button>
+			<Button Content="Info About your university" HorizontalAlignment="Left" Height="58" Margin="338,123,0,0" VerticalAlignment="Top" Width="272">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<pi:NavigateToScreenAction TargetScreen="ImapScreens.School_data"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Button>
+			<Button Content="See on the map" HorizontalAlignment="Left" Height="108" Margin="441,10,0,0" VerticalAlignment="Top" Width="169">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<pi:NavigateToScreenAction TargetScreen="ImapScreens.Map"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Button>
+			<TextBlock HorizontalAlignment="Left" Height="108" Margin="10,10,0,0" TextWrapping="Wrap" Text="NEXT:" VerticalAlignment="Top" Width="426"/>
+		</Grid>
+		<Grid HorizontalAlignment="Left" Height="136" Margin="10,158,0,0" VerticalAlignment="Top" Width="620">
+			<Button Content="More" HorizontalAlignment="Left" Height="116" Margin="472,10,0,0" VerticalAlignment="Top" Width="138"/>
+		</Grid>
+		<Button Content="Login" HorizontalAlignment="Left" Height="34" Margin="552,10,0,0" VerticalAlignment="Top" Width="78">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="ImapScreens.Screen_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+	</Grid>
 </UserControl>
