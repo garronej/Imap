@@ -77,6 +77,9 @@
     <Compile Include="LayoutRoot.xaml.cs">
       <DependentUpon>LayoutRoot.xaml</DependentUpon>
     </Compile>
+    <Compile Include="loginLabel.xaml.cs">
+      <DependentUpon>loginLabel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Map.xaml.cs">
       <DependentUpon>Map.xaml</DependentUpon>
     </Compile>
@@ -111,6 +114,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="LayoutRoot.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="loginLabel.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -135,6 +135,18 @@
       </Position>
       <VisualTag>1</VisualTag>
     </Screen>
+    <Screen>
+      <Type>Composition</Type>
+      <ClassName>ImapScreens.loginLabel</ClassName>
+      <DisplayName>loginLabel</DisplayName>
+      <FileName>loginLabel.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>149</X>
+        <Y>-42</Y>
+      </Position>
+      <VisualTag>1</VisualTag>
+    </Screen>
   </Screens>
   <Connections>
     <Connection>
@@ -329,10 +341,10 @@
     </VisualTag>
   </VisualTags>
   <ViewState>
-    <Zoom>0.75</Zoom>
+    <Zoom>0.66666666666666663</Zoom>
     <Center>
-      <X>143.08651851851872</X>
-      <Y>130.35125448028686</Y>
+      <X>148.97233333333361</X>
+      <Y>-199.75471698113205</Y>
     </Center>
   </ViewState>
 </Data>
