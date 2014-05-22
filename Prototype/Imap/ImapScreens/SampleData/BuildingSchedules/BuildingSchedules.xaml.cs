@@ -59,78 +59,59 @@ namespace Expression.Blend.SampleData.BuildingSchedules
 			}
 		}
 
-		private string _Property1 = string.Empty;
+		private string _Ligne_1 = string.Empty;
 
-		public string Property1
+		public string Ligne_1
 		{
 			get
 			{
-				return this._Property1;
+				return this._Ligne_1;
 			}
 
 			set
 			{
-				if (this._Property1 != value)
+				if (this._Ligne_1 != value)
 				{
-					this._Property1 = value;
-					this.OnPropertyChanged("Property1");
+					this._Ligne_1 = value;
+					this.OnPropertyChanged("Ligne_1");
 				}
 			}
 		}
 
-		private string _Property2 = string.Empty;
+		private string _Ligne_2 = string.Empty;
 
-		public string Property2
+		public string Ligne_2
 		{
 			get
 			{
-				return this._Property2;
+				return this._Ligne_2;
 			}
 
 			set
 			{
-				if (this._Property2 != value)
+				if (this._Ligne_2 != value)
 				{
-					this._Property2 = value;
-					this.OnPropertyChanged("Property2");
+					this._Ligne_2 = value;
+					this.OnPropertyChanged("Ligne_2");
 				}
 			}
 		}
 
-		private string _Property3 = string.Empty;
+		private double _Id_place = 0;
 
-		public string Property3
+		public double Id_place
 		{
 			get
 			{
-				return this._Property3;
+				return this._Id_place;
 			}
 
 			set
 			{
-				if (this._Property3 != value)
+				if (this._Id_place != value)
 				{
-					this._Property3 = value;
-					this.OnPropertyChanged("Property3");
-				}
-			}
-		}
-
-		private string _Property4 = string.Empty;
-
-		public string Property4
-		{
-			get
-			{
-				return this._Property4;
-			}
-
-			set
-			{
-				if (this._Property4 != value)
-				{
-					this._Property4 = value;
-					this.OnPropertyChanged("Property4");
+					this._Id_place = value;
+					this.OnPropertyChanged("Id_place");
 				}
 			}
 		}

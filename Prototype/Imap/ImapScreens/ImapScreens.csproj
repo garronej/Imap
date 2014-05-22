@@ -65,6 +65,9 @@
     <Reference Include="Microsoft.Expression.Prototyping.SketchControls" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataStore\stateVar\stateVar.xaml.cs">
+      <DependentUpon>stateVar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Google_Calendar.xaml.cs">
       <DependentUpon>Google_Calendar.xaml</DependentUpon>
     </Compile>
@@ -107,6 +110,10 @@
     <Compile Include="_60_view.xaml.cs">
       <DependentUpon>_60_view.xaml</DependentUpon>
     </Compile>
+    <Page Include="DataStore\stateVar\stateVar.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Google_Calendar.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
@@ -177,6 +184,7 @@
       <SubType>Designer</SubType>
     </Page>
     <Resource Include="blue.jpg" />
+    <DesignTimeOnly Include="DataStore\stateVar\stateVar.xsd" />
     <Resource Include="Ensimag.png" />
     <Resource Include="Ensimag_logo_left.jpg" />
     <Resource Include="Fonts\BuxtonSketch.ttf" />
