@@ -4,6 +4,7 @@
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity"
+	xmlns:local="clr-namespace:ImapScreens"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Home_Logged"
 	Width="640" Height="1130">
@@ -36,5 +37,7 @@
 		<Grid HorizontalAlignment="Left" Height="136" Margin="0,518,0,0" VerticalAlignment="Top" Width="620">
 			<Button Content="More" HorizontalAlignment="Left" Height="116" Margin="472,10,0,0" VerticalAlignment="Top" Width="138"/>
 		</Grid>
+		<local:LayoutRoot HorizontalAlignment="Left" Margin="0,0,0,-6" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
+		<local:Search_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
 	</Grid>
 </UserControl>

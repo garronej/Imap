@@ -8,11 +8,6 @@
 	xmlns:local="clr-namespace:ImapScreens"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Screen_1"
-	Width="640" Height="1129.9">
-
-	<Grid x:Name="LayoutRoot" Background="White">
-		<local:Search_component Margin="104,233,118,673" d:IsPrototypingComposition="True"/>
-		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="326" Margin="130,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="392"/>
-		<Button Content="Button" HorizontalAlignment="Left" Margin="285,696,0,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="75" FontFamily="Buxton Sketch"/>
-	</Grid>
+	Width="640" Height="1136">
+	<local:LayoutRoot HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
 </UserControl>

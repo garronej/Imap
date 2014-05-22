@@ -10,8 +10,8 @@
       <FileName>Screen_1.xaml</FileName>
       <Annotations />
       <Position>
-        <X>2</X>
-        <Y>63</Y>
+        <X>-69</X>
+        <Y>105</Y>
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
@@ -22,8 +22,8 @@
       <FileName>Screen_1_1.xaml</FileName>
       <Annotations />
       <Position>
-        <X>90</X>
-        <Y>-124</Y>
+        <X>133</X>
+        <Y>-81</Y>
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
@@ -58,8 +58,8 @@
       <FileName>_60_view.xaml</FileName>
       <Annotations />
       <Position>
-        <X>196</X>
-        <Y>-82</Y>
+        <X>309</X>
+        <Y>-132</Y>
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
@@ -71,7 +71,7 @@
       <Annotations />
       <Position>
         <X>124</X>
-        <Y>81</Y>
+        <Y>84</Y>
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
@@ -94,8 +94,8 @@
       <FileName>Google_Calendar.xaml</FileName>
       <Annotations />
       <Position>
-        <X>389</X>
-        <Y>66</Y>
+        <X>387</X>
+        <Y>13</Y>
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
@@ -106,8 +106,20 @@
       <FileName>Search component.xaml</FileName>
       <Annotations />
       <Position>
-        <X>0</X>
-        <Y>0</Y>
+        <X>-131</X>
+        <Y>-104</Y>
+      </Position>
+      <VisualTag>1</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Composition</Type>
+      <ClassName>ImapScreens.LayoutRoot</ClassName>
+      <DisplayName>BackgroundComponent</DisplayName>
+      <FileName>LayoutRoot.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>-37</X>
+        <Y>-157</Y>
       </Position>
       <VisualTag>1</VisualTag>
     </Screen>
@@ -198,18 +210,39 @@
       <VisualTag>0</VisualTag>
     </Connection>
     <Connection>
-      <Source>ImapScreens.Screen_1</Source>
+      <Source>ImapScreens.Screen_1_1</Source>
+      <Target>ImapScreens.LayoutRoot</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Place_data</Source>
+      <Target>ImapScreens.LayoutRoot</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Home_Logged</Source>
+      <Target>ImapScreens.LayoutRoot</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Home_Logged</Source>
       <Target>ImapScreens.Search_component</Target>
       <Type>Composition</Type>
       <TransitionType>None</TransitionType>
       <VisualTag>1</VisualTag>
     </Connection>
     <Connection>
-      <Source>ImapScreens.Search_component</Source>
-      <Target>ImapScreens.Map</Target>
-      <Type>Navigation</Type>
-      <TransitionType>Fade</TransitionType>
-      <VisualTag>0</VisualTag>
+      <Source>ImapScreens.Screen_1</Source>
+      <Target>ImapScreens.LayoutRoot</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
     </Connection>
   </Connections>
   <PrototypeRevision>0</PrototypeRevision>
@@ -256,10 +289,10 @@
     </VisualTag>
   </VisualTags>
   <ViewState>
-    <Zoom>0.5</Zoom>
+    <Zoom>0.33333333333333331</Zoom>
     <Center>
-      <X>218.23166666666663</X>
-      <Y>-14.029496732026189</Y>
+      <X>-42.150333333333379</X>
+      <Y>118.94686218165435</Y>
     </Center>
   </ViewState>
 </Data>

@@ -3,9 +3,12 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:local="clr-namespace:ImapScreens"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Place_data"
 	Width="640" Height="1130">
 
-	<Grid x:Name="LayoutRoot" Background="White"/>
+	<Grid x:Name="LayoutRoot" Background="White">
+		<local:LayoutRoot HorizontalAlignment="Left" Margin="0,0,0,-6" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
+	</Grid>
 </UserControl>

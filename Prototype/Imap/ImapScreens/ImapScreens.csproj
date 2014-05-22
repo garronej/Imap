@@ -71,6 +71,9 @@
     <Compile Include="Home_Logged.xaml.cs">
       <DependentUpon>Home_Logged.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LayoutRoot.xaml.cs">
+      <DependentUpon>LayoutRoot.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Map.xaml.cs">
       <DependentUpon>Map.xaml</DependentUpon>
     </Compile>
@@ -97,6 +100,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Home_Logged.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LayoutRoot.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
