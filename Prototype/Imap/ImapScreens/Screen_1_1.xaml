@@ -5,7 +5,14 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Screen_1_1"
-	Width="640" Height="480">
+	Width="640" Height="1130">
 
-	<Grid x:Name="LayoutRoot" Background="White"/>
+	<Grid x:Name="LayoutRoot" Background="White" Height="1130" RenderTransformOrigin="0.534,0.597">
+		<Image HorizontalAlignment="Left" Height="1140" Margin="0,0,0,-10" VerticalAlignment="Top" Width="640" Source="blue.jpg" Stretch="Fill">
+			<Image.OpacityMask>
+				<ImageBrush ImageSource="blue.jpg"/>
+			</Image.OpacityMask>
+		</Image>
+		<Grid Height="1130" Margin="-10,-10,10,10" Width="640"/>
+	</Grid>
 </UserControl>
