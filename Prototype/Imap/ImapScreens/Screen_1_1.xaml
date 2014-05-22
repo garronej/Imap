@@ -32,6 +32,13 @@
 			</Border>
 			<TextBox HorizontalAlignment="Left" Height="34" Margin="242,682,0,0" Style="{StaticResource BasicTextBox-Sketch}" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="228" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light"/>
 			<PasswordBox HorizontalAlignment="Left" Height="30" Margin="242,742,0,0" Style="{StaticResource PasswordBox-Sketch}" VerticalAlignment="Top" Width="228" Password="pqpassword"/>
+			<Grid HorizontalAlignment="Left" Height="100" Margin="0,1036,0,0" VerticalAlignment="Top" Width="630">
+				<Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="201" Height="60" Margin="0,40,0,0" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light" FontSize="18.667"/>
+				<Button Content="Menu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="201" Height="60" Margin="429,40,0,0" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light" FontSize="18.667"/>
+			</Grid>
+			<Grid HorizontalAlignment="Left" Height="58" Margin="242,576,0,0" VerticalAlignment="Top" Width="174">
+				<local:loginLabel HorizontalAlignment="Left" VerticalAlignment="Top" Height="76" Margin="0,0,-40,-18" Width="214"/>
+			</Grid>
 		</Grid>
 	</Grid>
 </UserControl>
