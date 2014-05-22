@@ -101,8 +101,8 @@
     <Compile Include="SampleData\BuildingSchedules\BuildingSchedules.xaml.cs">
       <DependentUpon>BuildingSchedules.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SampleData\DatabasePlace\DatabasePlace.xaml.cs">
-      <DependentUpon>DatabasePlace.xaml</DependentUpon>
+    <Compile Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces.xaml.cs">
+      <DependentUpon>DatabaseOfPlaces.xaml</DependentUpon>
     </Compile>
     <Compile Include="SampleData\SampleDataSource\SampleDataSource.xaml.cs">
       <DependentUpon>SampleDataSource.xaml</DependentUpon>
@@ -167,7 +167,7 @@
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="SampleData\DatabasePlace\DatabasePlace.xaml">
+    <Page Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -224,7 +224,12 @@
     <DesignTimeOnly Include="SampleData\SampleDataSource\SampleDataSource.xsd" />
     <Resource Include="logo.gif" />
     <DesignTimeOnly Include="SampleData\BuildingSchedules\BuildingSchedules.xsd" />
-    <DesignTimeOnly Include="SampleData\DatabasePlace\DatabasePlace.xsd" />
+    <DesignTimeOnly Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces.xsd" />
+    <Resource Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces_Files\image01.png" />
+    <Resource Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces_Files\image02.png" />
+    <Resource Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces_Files\image03.png" />
+    <Resource Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces_Files\image04.png" />
+    <Resource Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces_Files\image05.png" />
     <Resource Include="SampleData\DatabasePlace\DatabasePlace_Files\image01.png" />
     <Resource Include="SampleData\DatabasePlace\DatabasePlace_Files\image02.png" />
     <Resource Include="SampleData\DatabasePlace\DatabasePlace_Files\image03.png" />
@@ -236,6 +241,10 @@
     <Folder Include="DataStore\DataStore\" />
     <Folder Include="DataStore\isOpen\" />
     <Folder Include="DataStore\State\" />
+    <Folder Include="SampleData\DatabasePlace\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Design\projectGuides.guides" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
