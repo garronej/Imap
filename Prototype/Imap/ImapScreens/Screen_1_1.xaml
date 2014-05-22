@@ -17,7 +17,7 @@
 				<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="334" Margin="49,194,-470,-428" VerticalAlignment="Top" Width="521" Cursor="SizeNESW" Background="#FFAED1D8">
 					<Border BorderBrush="Black" BorderThickness="1"/>
 				</Border>
-				<RadioButton Content="Universite Joseph Fourier" IsChecked="True" FontSize="21.333" GroupName="university" HorizontalAlignment="Left" BorderThickness="1" Margin="101,223,-411,-157" Width="410" Cursor="SizeNESW"/>
+				<RadioButton Content="Universite Joseph Fourier" FontSize="21.333" GroupName="university" HorizontalAlignment="Left" BorderThickness="1" Margin="101,223,-411,-157" Width="410" Cursor="SizeNESW"/>
 				<RadioButton Content="Universite Pierre Mendes" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="101,272,-299,-219" FontSize="21.333" Height="47" Width="298"/>
 				<RadioButton Content="Universite de Savoie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,323,-274,-262" FontSize="21.333" Height="39" Width="272"/>
 				<RadioButton Content="Universite Stendhal" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" Height="36" Margin="101,367,-253,-303" Width="252"/>
@@ -53,6 +53,6 @@
 				<Button x:Name="btnMenu" Content="MENU" HorizontalAlignment="Left" Height="60" Margin="29,42,-2,-2" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="201" FontFamily="Microsoft JhengHei Light" FontSize="13.333" Grid.ColumnSpan="2" Grid.Column="1"/>
 			</Grid>
 		</Grid>
-		<TextBlock HorizontalAlignment="Left" Height="58" Margin="231,563,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="LOGIN" VerticalAlignment="Top" Width="205" FontFamily="Microsoft JhengHei" FontSize="48"/>
+		<TextBlock HorizontalAlignment="Left" Height="58" Margin="231,563,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="LOGIN" VerticalAlignment="Top" Width="205" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei" FontSize="48"/>
 	</Grid>
 </UserControl>

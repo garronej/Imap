@@ -10,7 +10,7 @@
 
 	<Grid x:Name="LayoutRoot" Background="White" Height="1130">
 		<Grid HorizontalAlignment="Left" Height="1130" VerticalAlignment="Top" Width="640">
-			<local:LayoutRoot HorizontalAlignment="Left" Margin="0,0,0,-6" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
+			<local:LayoutRoot HorizontalAlignment="Left" Margin="0,12,0,-18" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
 			<Image Margin="397,12,12,966" Source="Ensimag.png" Stretch="Fill"/>
 			<Grid Margin="18,12,337,980">
 				<Rectangle HorizontalAlignment="Left" Height="138" Stroke="Black" VerticalAlignment="Top" Width="285">

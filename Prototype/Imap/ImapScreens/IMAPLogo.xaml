@@ -8,7 +8,7 @@
 	d:DesignWidth="447" d:DesignHeight="171" Height="171" Width="447">
 
 	<Grid x:Name="LayoutRoot">
-		<TextBlock Height="171" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="IMAP" VerticalAlignment="Top" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light" TextAlignment="Center" LineHeight="96" FontSize="96" Foreground="#FF252323"/>
+		<TextBlock Height="171" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="IMAP" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" TextAlignment="Center" LineHeight="96" FontSize="96" Foreground="#FF252323"/>
 		<Grid HorizontalAlignment="Left" Height="24" Margin="51,112,0,0" VerticalAlignment="Top" Width="340">
 			<TextBlock HorizontalAlignment="Left" Height="22" Margin="58,0,-38,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Your daily assistant in the campus" VerticalAlignment="Top" Width="320" FontFamily="Script MT Bold" FontSize="16" Foreground="#FF011117"/>
 		</Grid>
