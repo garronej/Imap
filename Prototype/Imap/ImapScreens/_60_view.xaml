@@ -5,7 +5,9 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	mc:Ignorable="d"
 	x:Class="ImapScreens._60_view"
-	Width="640" Height="480">
+	Width="640" Height="1130">
 
-	<Grid x:Name="LayoutRoot" Background="White"/>
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+	</Grid>
 </UserControl>

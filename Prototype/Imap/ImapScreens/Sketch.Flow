@@ -10,8 +10,8 @@
       <FileName>Screen_1.xaml</FileName>
       <Annotations />
       <Position>
-        <X>-2</X>
-        <Y>65</Y>
+        <X>2</X>
+        <Y>63</Y>
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
@@ -23,7 +23,7 @@
       <Annotations />
       <Position>
         <X>90</X>
-        <Y>-48</Y>
+        <Y>-124</Y>
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
@@ -58,7 +58,7 @@
       <FileName>_60_view.xaml</FileName>
       <Annotations />
       <Position>
-        <X>200</X>
+        <X>196</X>
         <Y>-82</Y>
       </Position>
       <VisualTag>0</VisualTag>
@@ -95,7 +95,7 @@
       <Annotations />
       <Position>
         <X>389</X>
-        <Y>70</Y>
+        <Y>66</Y>
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
@@ -230,10 +230,10 @@
     </VisualTag>
   </VisualTags>
   <ViewState>
-    <Zoom>0.8</Zoom>
+    <Zoom>0.5</Zoom>
     <Center>
-      <X>212.87222222222215</X>
-      <Y>42.657397875816969</Y>
+      <X>218.23166666666663</X>
+      <Y>-14.029496732026189</Y>
     </Center>
   </ViewState>
 </Data>
