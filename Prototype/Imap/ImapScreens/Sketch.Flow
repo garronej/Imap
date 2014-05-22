@@ -171,6 +171,20 @@
       <TransitionType>Fade</TransitionType>
       <VisualTag>0</VisualTag>
     </Connection>
+    <Connection>
+      <Source>ImapScreens.Place_data</Source>
+      <Target>ImapScreens._60_view</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Screen_1</Source>
+      <Target>ImapScreens.Place_data</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
   </Connections>
   <PrototypeRevision>0</PrototypeRevision>
   <BrandingText>Microsoft SketchFlow Prototype</BrandingText>
@@ -216,10 +230,10 @@
     </VisualTag>
   </VisualTags>
   <ViewState>
-    <Zoom>0.75</Zoom>
+    <Zoom>0.8</Zoom>
     <Center>
-      <X>321.17333333333329</X>
-      <Y>46.797782135076254</Y>
+      <X>212.87222222222215</X>
+      <Y>42.657397875816969</Y>
     </Center>
   </ViewState>
 </Data>
