@@ -9,8 +9,8 @@
 
 	<Grid x:Name="LayoutRoot">
 		<Grid>
-			<Button Content="Back" HorizontalAlignment="Left" FontFamily="Microsoft MHei" FontSize="21.333" Width="200"/>
-			<Button Content="Menu" HorizontalAlignment="Right" Margin="402,0,0,0" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft MHei" FontSize="21.333" Width="200"/>
+			<Button Content="Button" HorizontalAlignment="Left" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="200" Height="86" FontFamily="Microsoft MHei"/>
+			<Button Content="Button" HorizontalAlignment="Left" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="200" Height="86" Margin="439,0,0,0" FontFamily="Microsoft MHei"/>
 		</Grid>
 	</Grid>
 </UserControl>

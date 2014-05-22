@@ -8,9 +8,7 @@
 	d:DesignWidth="639" d:DesignHeight="86" Height="72" Width="639">
 
 	<Grid x:Name="LayoutRoot">
-		<Grid>
-			<Button Content="Back" HorizontalAlignment="Left" FontFamily="Microsoft JhengHei UI Light" FontSize="21.333" Width="200"/>
-			<Button Content="Menu" HorizontalAlignment="Right" Margin="402,0,0,0" FontFamily="Minion Pro Med" FontSize="21.333" Width="200"/>
-		</Grid>
+		<Button Content="Menu" HorizontalAlignment="Left" Height="72" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="200" FontFamily="Microsoft MHei" Margin="439,0,0,0" FontSize="21.333"/>
+		<Button Content="Back" HorizontalAlignment="Left" Height="72" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="200" FontFamily="Microsoft MHei" FontSize="21.333"/>
 	</Grid>
 </UserControl>

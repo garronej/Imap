@@ -4,12 +4,183 @@
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:local="clr-namespace:ImapScreens"
+	xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" xmlns:ee="http://schemas.microsoft.com/expression/2010/effects" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" xmlns:pc="http://schemas.microsoft.com/prototyping/2010/controls" x:Name="userControl"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Place_data"
-	Width="640" Height="1130">
+	Width="640" Height="1136" HorizontalAlignment="Center" VerticalAlignment="Center">
+	<i:Interaction.Triggers>
+		<i:EventTrigger>
+			<ei:GoToStateAction TargetObject="{Binding ElementName=userControl}" StateName="Closed"/>
+		</i:EventTrigger>
+		<i:EventTrigger EventName="Loaded">
+			<ei:SetDataStoreValueAction Value="false" PropertyName="isOpen"/>
+		</i:EventTrigger>
+	</i:Interaction.Triggers>
 
 	<Grid x:Name="LayoutRoot" Background="White">
-		<local:LayoutRoot HorizontalAlignment="Left" Margin="0,0,0,-6" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
-		<local:Navigate_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="1,1058,0,0"/>
+		<VisualStateManager.CustomVisualStateManager>
+			<ei:ExtendedVisualStateManager/>
+		</VisualStateManager.CustomVisualStateManager>
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="DropMenuState">
+				<VisualStateGroup.Transitions>
+					<VisualTransition From="Closed" GeneratedDuration="0" To="Opened">
+						<ei:ExtendedVisualStateManager.TransitionEffect>
+							<ee:FadeTransitionEffect/>
+						</ei:ExtendedVisualStateManager.TransitionEffect>
+						<Storyboard>
+							<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="grid">
+								<DiscreteObjectKeyFrame KeyTime="0">
+									<DiscreteObjectKeyFrame.Value>
+										<Thickness>0,1063,0,0</Thickness>
+									</DiscreteObjectKeyFrame.Value>
+								</DiscreteObjectKeyFrame>
+								<DiscreteObjectKeyFrame KeyTime="0:0:0.1">
+									<DiscreteObjectKeyFrame.Value>
+										<Thickness>0,1025,0,0</Thickness>
+									</DiscreteObjectKeyFrame.Value>
+								</DiscreteObjectKeyFrame>
+								<DiscreteObjectKeyFrame KeyTime="0:0:0.2">
+									<DiscreteObjectKeyFrame.Value>
+										<Thickness>0,969,0,0</Thickness>
+									</DiscreteObjectKeyFrame.Value>
+								</DiscreteObjectKeyFrame>
+								<DiscreteObjectKeyFrame KeyTime="0:0:0.3">
+									<DiscreteObjectKeyFrame.Value>
+										<Thickness>0,928,0,0</Thickness>
+									</DiscreteObjectKeyFrame.Value>
+								</DiscreteObjectKeyFrame>
+								<DiscreteObjectKeyFrame KeyTime="0:0:0.4">
+									<DiscreteObjectKeyFrame.Value>
+										<Thickness>0,881,0,0</Thickness>
+									</DiscreteObjectKeyFrame.Value>
+								</DiscreteObjectKeyFrame>
+								<DiscreteObjectKeyFrame KeyTime="0:0:0.5">
+									<DiscreteObjectKeyFrame.Value>
+										<Thickness>0,834,0,0</Thickness>
+									</DiscreteObjectKeyFrame.Value>
+								</DiscreteObjectKeyFrame>
+								<DiscreteObjectKeyFrame KeyTime="0:0:0.6">
+									<DiscreteObjectKeyFrame.Value>
+										<Thickness>0,775,0,0</Thickness>
+									</DiscreteObjectKeyFrame.Value>
+								</DiscreteObjectKeyFrame>
+								<DiscreteObjectKeyFrame KeyTime="0:0:0.7">
+									<DiscreteObjectKeyFrame.Value>
+										<Thickness>0,725,0,0</Thickness>
+									</DiscreteObjectKeyFrame.Value>
+								</DiscreteObjectKeyFrame>
+								<DiscreteObjectKeyFrame KeyTime="0:0:0.8">
+									<DiscreteObjectKeyFrame.Value>
+										<Thickness>0,647,0,0</Thickness>
+									</DiscreteObjectKeyFrame.Value>
+								</DiscreteObjectKeyFrame>
+								<DiscreteObjectKeyFrame KeyTime="0:0:0.9">
+									<DiscreteObjectKeyFrame.Value>
+										<Thickness>0,626,0,0</Thickness>
+									</DiscreteObjectKeyFrame.Value>
+								</DiscreteObjectKeyFrame>
+								<DiscreteObjectKeyFrame KeyTime="0:0:1">
+									<DiscreteObjectKeyFrame.Value>
+										<Thickness>0,592,0,0</Thickness>
+									</DiscreteObjectKeyFrame.Value>
+								</DiscreteObjectKeyFrame>
+								<DiscreteObjectKeyFrame KeyTime="0:0:1.1">
+									<DiscreteObjectKeyFrame.Value>
+										<Thickness>0,571,0,0</Thickness>
+									</DiscreteObjectKeyFrame.Value>
+								</DiscreteObjectKeyFrame>
+								<DiscreteObjectKeyFrame KeyTime="0:0:1.2">
+									<DiscreteObjectKeyFrame.Value>
+										<Thickness>0,557,0,0</Thickness>
+									</DiscreteObjectKeyFrame.Value>
+								</DiscreteObjectKeyFrame>
+							</ObjectAnimationUsingKeyFrames>
+						</Storyboard>
+					</VisualTransition>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="Closed">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.FontFamily)" Storyboard.TargetName="textBlock1">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<FontFamily>Buxton Sketch</FontFamily>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Opened">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="grid">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Thickness>0,558,0,0</Thickness>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.FontFamily)" Storyboard.TargetName="sketchRectangleSL">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<FontFamily>Portable User Interface</FontFamily>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="regularPolygon" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="___RegularPolygonRevers_" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock1" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="0.958" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="button" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="1.5" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="button" d:IsOptimized="True"/>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="button">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Thickness>0,0,-2,507</Thickness>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.FontFamily)" Storyboard.TargetName="sketchRectangleSL1">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<FontFamily>Portable User Interface</FontFamily>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<local:LayoutRoot HorizontalAlignment="Left" Margin="-1,0,0,0" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
+		<Grid x:Name="grid" HorizontalAlignment="Left" Height="579" Margin="0,1063,0,0" VerticalAlignment="Top" Width="639">
+			<pc:SketchRectangleSL x:Name="sketchRectangleSL" Height="72" Style="{StaticResource Rectangle-Sketch}" VerticalAlignment="Top" Width="640" Background="White"/>
+			<pc:SketchRectangleSL x:Name="sketchRectangleSL1" Height="578" Style="{StaticResource Rectangle-Sketch}" Width="641" Opacity="0.5" BorderBrush="{x:Null}"/>
+			<ed:RegularPolygon x:Name="regularPolygon" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="26.333" InnerRadius="1" PointCount="3" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Center" Width="35.333" Margin="0,-537,0,0"/>
+			<ed:RegularPolygon x:Name="___RegularPolygonRevers_" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="26.332" InnerRadius="1" PointCount="3" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Center" Width="35.333" Margin="301.833,7.334,301.834,544.334" Opacity="0">
+				<ed:RegularPolygon.Projection>
+					<PlaneProjection RotationZ="180"/>
+				</ed:RegularPolygon.Projection>
+			</ed:RegularPolygon>
+			<TextBlock x:Name="textBlock" HorizontalAlignment="Center" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="More places" VerticalAlignment="Center" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei Light" Margin="0,-474,0,0"/>
+			<TextBlock x:Name="textBlock1" HorizontalAlignment="Center" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Close" VerticalAlignment="Center" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei Light" Margin="0,-474,0,0" Opacity="0"/>
+			<Button Content="Button" FontFamily="Buxton Sketch" HorizontalAlignment="Center" Height="72" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="240" Margin="198,0" Opacity="0" DataContext="{Binding}">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<pi:ActivateStateAction TargetState="Opened"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Button>
+			<Button x:Name="button" Content="Button" HorizontalAlignment="Center" Height="72" Margin="-1293,0,-2,507" Style="{StaticResource Button-Sketch}" VerticalAlignment="Center" Width="641" Opacity="0" RenderTransformOrigin="0.5,0.5">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<pi:ActivateStateAction TargetState="Closed"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+				<Button.RenderTransform>
+					<CompositeTransform/>
+				</Button.RenderTransform>
+			</Button>
+		</Grid>
+		<Button Content="Back" HorizontalAlignment="Left" Height="72" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="200" FontFamily="Microsoft MHei" FontSize="21.333" Margin="0,1064,0,0"/>
+		<Button Content="Menu" HorizontalAlignment="Left" Height="72" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="200" FontFamily="Microsoft MHei" FontSize="21.333" Margin="440,1063,0,0"/>
 	</Grid>
 </UserControl>

@@ -295,13 +295,6 @@
       <VisualTag>1</VisualTag>
     </Connection>
     <Connection>
-      <Source>ImapScreens.Place_data</Source>
-      <Target>ImapScreens.Navigate_component</Target>
-      <Type>Composition</Type>
-      <TransitionType>None</TransitionType>
-      <VisualTag>1</VisualTag>
-    </Connection>
-    <Connection>
       <Source>ImapScreens.Home_Logged</Source>
       <Target>ImapScreens.Navigate_component</Target>
       <Type>Composition</Type>
