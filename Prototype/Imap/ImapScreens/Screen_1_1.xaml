@@ -10,7 +10,7 @@
 	<Grid HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640">
 		<Grid HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640">
 			<Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-			<local:LayoutRoot HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="-10,10,0,-10"/>
+			<local:LayoutRoot HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="-10,0,0,0"/>
 			<local:IMAPLogo Margin="109,10,84,955" d:IsPrototypingComposition="True"/>
 			<Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100">
 				<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="334" Margin="49,194,-470,-428" VerticalAlignment="Top" Width="521" Cursor="SizeNESW" Background="#FFAED1D8">

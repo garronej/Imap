@@ -19,16 +19,10 @@
 					</i:EventTrigger>
 				</i:Interaction.Triggers>
 			</sdk:AutoCompleteBox>
-			<Button x:Name="button" Content="{Binding SelectedItem}" HorizontalAlignment="Left" Height="48" Margin="309,10,0,0" VerticalAlignment="Top" Width="99" FontFamily="Microsoft JhengHei Light" FontSize="21.333" IsEnabled="False" DataContext="{Binding ElementName=myACB}">
-				<i:Interaction.Triggers>
-					<i:EventTrigger EventName="Click">
-						<ei:SetDataStoreValueAction Value=""/>
-					</i:EventTrigger>
-				</i:Interaction.Triggers>
-			</Button>
 			<TextBlock HorizontalAlignment="Left" Margin="203,79,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Or" VerticalAlignment="Top" FontFamily="Microsoft JhengHei Light" FontSize="21.333"/>
-			<Button Content="Go map" HorizontalAlignment="Left" Height="58" Margin="253,156,0,0" VerticalAlignment="Top" Width="155" FontFamily="Microsoft JhengHei Light" FontSize="21.333"/>
-			<Button Content="Custom Search" HorizontalAlignment="Left" Height="58" Margin="10,156,0,0" VerticalAlignment="Top" Width="155" FontFamily="Microsoft JhengHei Light" FontSize="21.333"/>
+			<Button x:Name="btnCustmSearch" Content="Custom Search " HorizontalAlignment="Left" Margin="10,156,0,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="155" Height="58" FontFamily="Microsoft JhengHei" FontSize="18.667" Background="#FFFDF9F9"/>
+			<Button x:Name="btnGoMap" Content="Go Map" HorizontalAlignment="Left" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="155" Height="58" FontFamily="Microsoft JhengHei" FontSize="18.667" Background="#FFFDF9F9" Margin="253,156,0,0"/>
+			<Button x:Name="btnSearch" Content="OK" HorizontalAlignment="Left" Height="48" Margin="304,10,0,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="104" FontFamily="Microsoft JhengHei"/>
 		</Grid>
 		<Image Margin="0,0,418,224" Source="fleur.jpg" Stretch="Fill"/>
 	</Grid>
