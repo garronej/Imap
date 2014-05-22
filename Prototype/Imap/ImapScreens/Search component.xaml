@@ -23,5 +23,6 @@
 				</i:Interaction.Triggers>
 			</Button>
 		</Grid>
+		<Image Margin="0,0,418,224" Source="fleur.jpg" Stretch="Fill"/>
 	</Grid>
 </UserControl>
