@@ -7,29 +7,28 @@
 	xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Search_component"
-	d:DesignWidth="418" d:DesignHeight="224" Height="224" Width="418">
+	d:DesignWidth="418" d:DesignHeight="224" Height="224" Width="640">
 
 	<Grid x:Name="LayoutRoot">
-		<Grid HorizontalAlignment="Left" Height="224" VerticalAlignment="Top" Width="418">
-			<Rectangle Fill="#FFB6B6B6" HorizontalAlignment="Left" Height="224" Stroke="Black" VerticalAlignment="Top" Width="418" Opacity="0.5"/>
-			<sdk:AutoCompleteBox x:Name="myACB" HorizontalAlignment="Left" Height="48" Margin="10,10,0,0" VerticalAlignment="Top" Width="287" FontFamily="Microsoft JhengHei UI Light" Text="Search ..." FontSize="21.333" IsTextCompletionEnabled="True" ItemsSource="{Binding}" Background="#FFECECEC">
+		<Grid>
+			<Rectangle Fill="#FFB6B6B6" Stroke="Black" Opacity="0.5"/>
+			<sdk:AutoCompleteBox x:Name="myACB" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="msjhl.ttc#Microsoft JhengHei UI Light" Text="Search ..." FontSize="21.333" IsTextCompletionEnabled="True" ItemsSource="{Binding}" Background="#FFECECEC">
 				<i:Interaction.Triggers>
 					<i:EventTrigger EventName="SelectionChanged">
 						<ei:ChangePropertyAction TargetName="button" PropertyName="IsEnabled" Value="True"/>
 					</i:EventTrigger>
 				</i:Interaction.Triggers>
 			</sdk:AutoCompleteBox>
-			<Button x:Name="button" Content="{Binding SelectedItem}" HorizontalAlignment="Left" Height="48" Margin="309,10,0,0" VerticalAlignment="Top" Width="99" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light" FontSize="21.333" IsEnabled="False" DataContext="{Binding ElementName=myACB}">
+			<Button x:Name="button" HorizontalAlignment="Right" VerticalAlignment="Top" FontFamily="Microsoft JhengHei Light" FontSize="21.333" IsEnabled="False" Content="Search">
 				<i:Interaction.Triggers>
 					<i:EventTrigger EventName="Click">
 						<ei:SetDataStoreValueAction Value=""/>
 					</i:EventTrigger>
 				</i:Interaction.Triggers>
 			</Button>
-			<TextBlock HorizontalAlignment="Left" Margin="203,79,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Or" VerticalAlignment="Top" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light" FontSize="21.333"/>
-			<Button Content="Go map" HorizontalAlignment="Left" Height="58" Margin="253,156,0,0" VerticalAlignment="Top" Width="155" FontFamily="Microsoft JhengHei Light" FontSize="21.333"/>
-			<Button Content="Custom Search" HorizontalAlignment="Left" Height="58" Margin="10,156,0,0" VerticalAlignment="Top" Width="155" FontFamily="Microsoft JhengHei Light" FontSize="21.333"/>
+			<TextBlock HorizontalAlignment="Center" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Or" VerticalAlignment="Center" FontFamily="Microsoft JhengHei Light" FontSize="21.333"/>
+			<Button Content="Go map" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontFamily="Microsoft JhengHei Light" FontSize="21.333"/>
+			<Button Content="Custom Search" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="21.333"/>
 		</Grid>
-		<Image Margin="0,0,418,224" Source="fleur.jpg" Stretch="Fill"/>
 	</Grid>
 </UserControl>

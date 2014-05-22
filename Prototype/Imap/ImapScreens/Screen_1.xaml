@@ -12,5 +12,9 @@
 	<Grid HorizontalAlignment="Left" Height="1136" Margin="1,0,0,0" VerticalAlignment="Top" Width="639">
 		<local:LayoutRoot HorizontalAlignment="Left" Margin="0,0,-1,0" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
 		<local:Search_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
+		<Grid HorizontalAlignment="Left" Height="97" Margin="1,1039,-1,0" VerticalAlignment="Top" Width="639">
+			<Button Content="Back" HorizontalAlignment="Left" Height="97" VerticalAlignment="Top" Width="237" FontFamily="Microsoft MHei"/>
+			<Button Content="Menu" HorizontalAlignment="Left" Height="97" VerticalAlignment="Top" Width="237" Margin="402,0,0,0" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft MHei"/>
+		</Grid>
 	</Grid>
 </UserControl>

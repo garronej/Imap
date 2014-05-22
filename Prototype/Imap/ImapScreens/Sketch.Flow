@@ -118,8 +118,8 @@
       <FileName>LayoutRoot.xaml</FileName>
       <Annotations />
       <Position>
-        <X>-87</X>
-        <Y>-171</Y>
+        <X>-85</X>
+        <Y>-164</Y>
       </Position>
       <VisualTag>1</VisualTag>
     </Screen>
@@ -296,10 +296,10 @@
     </VisualTag>
   </VisualTags>
   <ViewState>
-    <Zoom>0.66666666666666663</Zoom>
+    <Zoom>0.33333333333333331</Zoom>
     <Center>
-      <X>107.62483333333336</X>
-      <Y>9.0734310908270857</Y>
+      <X>56.312102167183411</X>
+      <Y>128.83019551498757</Y>
     </Center>
   </ViewState>
 </Data>
