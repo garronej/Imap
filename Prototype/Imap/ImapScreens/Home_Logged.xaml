@@ -5,11 +5,31 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity"
 	xmlns:local="clr-namespace:ImapScreens"
+	xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.SampleDataSource"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Home_Logged"
 	Width="640" Height="1130">
 
-	<Grid x:Name="LayoutRoot" Background="White">
+	<UserControl.Resources>
+		<SampleData:SampleDataSource x:Key="SampleDataSource" d:IsDataSource="True"/>
+		<DataTemplate x:Key="ItemTemplate">
+			<StackPanel>
+				<TextBlock Text="{Binding Property1}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+			</StackPanel>
+		</DataTemplate>
+		<DataTemplate x:Key="ItemTemplate1">
+			<StackPanel>
+				<TextBlock Text="{Binding Property1}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property2}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property3}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property4}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property5}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property6}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+			</StackPanel>
+		</DataTemplate>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding Source={StaticResource SampleDataSource}}">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="201*"/>
 			<RowDefinition Height="364*"/>
@@ -20,7 +40,7 @@
 			<Button Content="Full Schedule(ADE)" HorizontalAlignment="Left" Height="72" Margin="10,174,0,0" VerticalAlignment="Top" Width="319"/>
 			<Button Content="Information on your university" HorizontalAlignment="Left" Height="72" Margin="334,174,0,0" VerticalAlignment="Top" Width="296"/>
 			<Button Content="See on the map" HorizontalAlignment="Left" Height="159" Margin="470,10,0,0" VerticalAlignment="Top" Width="160"/>
-			<TextBox HorizontalAlignment="Left" Height="159" Margin="10,10,0,0" TextWrapping="Wrap" Text="Next" VerticalAlignment="Top" Width="455"/>
+			<TextBlock HorizontalAlignment="Left" Height="159" TextWrapping="Wrap" VerticalAlignment="Top" Width="455" Margin="10,10,0,0" Text="Test"/>
 		</Grid>
 		<Button Content="Logout" HorizontalAlignment="Left" Height="82" Margin="439,10,0,0" VerticalAlignment="Top" Width="191"/>
 		<Grid HorizontalAlignment="Left" Height="257" Margin="10,200,0,0" Grid.Row="1" VerticalAlignment="Top" Width="620">

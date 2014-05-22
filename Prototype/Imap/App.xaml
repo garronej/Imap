@@ -8,6 +8,7 @@
 			<ResourceDictionary.MergedDictionaries>
 				<ResourceDictionary Source="/Microsoft.Expression.Prototyping.SketchControls;component/ScrollViewerStyles.xaml"/>
 				<ResourceDictionary Source="/Imap.Screens;component/SketchStyles.xaml"/>
+				<ResourceDictionary Source="/Imap.Screens;component/ProjectDataSources.xaml"/>
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
