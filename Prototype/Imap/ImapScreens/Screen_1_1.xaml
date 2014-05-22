@@ -25,11 +25,13 @@
 			</Grid>
 			<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="340" VerticalAlignment="Top" Width="520" Margin="50,548,0,0" Background="#FFB4D6D6">
 				<Grid x:Name="LoginPage" Margin="21,89,27,31">
-					<TextBlock HorizontalAlignment="Left" Height="104" Margin="48,10,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light" FontSize="21.333" Text="Username  Password"/>
+					<TextBlock HorizontalAlignment="Left" Height="104" Margin="48,46,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light" FontSize="21.333" Text="Username  Password"/>
+					<Button Content="Reset" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="296,150,0,0" Height="30"/>
+					<Button Content="Login" HorizontalAlignment="Left" Height="30" Margin="172,149,0,0" VerticalAlignment="Top" Width="100"/>
 				</Grid>
 			</Border>
-			<TextBox HorizontalAlignment="Left" Height="34" Margin="242,646,0,0" Style="{StaticResource BasicTextBox-Sketch}" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="228" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light"/>
-			<PasswordBox HorizontalAlignment="Left" Height="30" Margin="242,706,0,0" Style="{StaticResource PasswordBox-Sketch}" VerticalAlignment="Top" Width="228" Password="pqpassword"/>
+			<TextBox HorizontalAlignment="Left" Height="34" Margin="242,682,0,0" Style="{StaticResource BasicTextBox-Sketch}" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="228" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light"/>
+			<PasswordBox HorizontalAlignment="Left" Height="30" Margin="242,742,0,0" Style="{StaticResource PasswordBox-Sketch}" VerticalAlignment="Top" Width="228" Password="pqpassword"/>
 		</Grid>
 	</Grid>
 </UserControl>
