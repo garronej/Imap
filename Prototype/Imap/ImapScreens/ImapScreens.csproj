@@ -41,6 +41,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Expression.Drawing" />
     <Reference Include="mscorlib" />
     <Reference Include="System.Windows" />
     <Reference Include="system" />
@@ -80,6 +81,12 @@
     <Compile Include="Map.xaml.cs">
       <DependentUpon>Map.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Navigate component.xaml.cs">
+      <DependentUpon>Navigate component.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation component.xaml.cs">
+      <DependentUpon>Navigation component.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Place_data.xaml.cs">
       <DependentUpon>Place_data.xaml</DependentUpon>
     </Compile>
@@ -111,6 +118,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Map.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Navigate component.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Navigation component.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>

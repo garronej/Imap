@@ -10,5 +10,6 @@
 
 	<Grid x:Name="LayoutRoot" Background="White">
 		<local:LayoutRoot HorizontalAlignment="Left" Margin="0,0,0,-6" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
+		<local:Navigate_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="1,1058,0,0"/>
 	</Grid>
 </UserControl>

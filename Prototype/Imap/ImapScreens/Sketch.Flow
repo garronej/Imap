@@ -34,7 +34,7 @@
       <FileName>Home_Logged.xaml</FileName>
       <Annotations />
       <Position>
-        <X>232</X>
+        <X>229</X>
         <Y>14</Y>
       </Position>
       <VisualTag>0</VisualTag>
@@ -120,6 +120,18 @@
       <Position>
         <X>-85</X>
         <Y>-164</Y>
+      </Position>
+      <VisualTag>1</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Composition</Type>
+      <ClassName>ImapScreens.Navigate_component</ClassName>
+      <DisplayName>Navigate component</DisplayName>
+      <FileName>Navigate component.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>-247</X>
+        <Y>19</Y>
       </Position>
       <VisualTag>1</VisualTag>
     </Screen>
@@ -251,6 +263,34 @@
       <TransitionType>None</TransitionType>
       <VisualTag>1</VisualTag>
     </Connection>
+    <Connection>
+      <Source>ImapScreens.Screen_1</Source>
+      <Target>ImapScreens.Navigate_component</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Place_data</Source>
+      <Target>ImapScreens.Navigate_component</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Home_Logged</Source>
+      <Target>ImapScreens.Navigate_component</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Screen_1_1</Source>
+      <Target>ImapScreens.Navigate_component</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
   </Connections>
   <PrototypeRevision>0</PrototypeRevision>
   <BrandingText>Microsoft SketchFlow Prototype</BrandingText>
@@ -296,10 +336,10 @@
     </VisualTag>
   </VisualTags>
   <ViewState>
-    <Zoom>0.33333333333333331</Zoom>
+    <Zoom>0.5</Zoom>
     <Center>
-      <X>56.312102167183411</X>
-      <Y>128.83019551498757</Y>
+      <X>-40.096376332988939</X>
+      <Y>-10.499869656675287</Y>
     </Center>
   </ViewState>
 </Data>

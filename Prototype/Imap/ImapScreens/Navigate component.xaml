@@ -1,0 +1,16 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="ImapScreens.Navigate_component"
+	d:DesignWidth="639" d:DesignHeight="86" Height="72" Width="639">
+
+	<Grid x:Name="LayoutRoot">
+		<Grid>
+			<Button Content="Back" HorizontalAlignment="Left" FontFamily="Microsoft JhengHei UI Light" FontSize="21.333" Width="200"/>
+			<Button Content="Menu" HorizontalAlignment="Right" Margin="402,0,0,0" FontFamily="Minion Pro Med" FontSize="21.333" Width="200"/>
+		</Grid>
+	</Grid>
+</UserControl>
