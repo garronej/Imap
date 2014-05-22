@@ -123,6 +123,18 @@
       </Position>
       <VisualTag>1</VisualTag>
     </Screen>
+    <Screen>
+      <Type>Composition</Type>
+      <ClassName>ImapScreens.IMAPLogo</ClassName>
+      <DisplayName>IMAPLogo</DisplayName>
+      <FileName>IMAPLogo.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>114</X>
+        <Y>-191</Y>
+      </Position>
+      <VisualTag>1</VisualTag>
+    </Screen>
   </Screens>
   <Connections>
     <Connection>
@@ -251,6 +263,27 @@
       <TransitionType>None</TransitionType>
       <VisualTag>1</VisualTag>
     </Connection>
+    <Connection>
+      <Source>ImapScreens.Screen_1_1</Source>
+      <Target>ImapScreens.IMAPLogo</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens._60_view</Source>
+      <Target>ImapScreens.IMAPLogo</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Screen_1</Source>
+      <Target>ImapScreens.IMAPLogo</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
   </Connections>
   <PrototypeRevision>0</PrototypeRevision>
   <BrandingText>Microsoft SketchFlow Prototype</BrandingText>
@@ -296,10 +329,10 @@
     </VisualTag>
   </VisualTags>
   <ViewState>
-    <Zoom>0.66666666666666663</Zoom>
+    <Zoom>0.75</Zoom>
     <Center>
-      <X>107.62483333333336</X>
-      <Y>9.0734310908270857</Y>
+      <X>143.08651851851872</X>
+      <Y>130.35125448028686</Y>
     </Center>
   </ViewState>
 </Data>
