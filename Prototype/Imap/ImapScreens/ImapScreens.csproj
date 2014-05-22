@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ExpressionBlendVersion>12.0.50320.0</ExpressionBlendVersion>
+    <ExpressionBlendVersion>12.0.50429.0</ExpressionBlendVersion>
     <ProjectGuid>{4e1b1da5-8e7b-486d-b781-176e444a7f38}</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -47,6 +47,7 @@
     <Reference Include="System.Core">
       <HintPath>$(TargetFrameworkDirectory)System.Core.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Controls.Input" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Net" />
     <Reference Include="System.Windows.Browser" />
@@ -129,6 +130,11 @@
       <SubType>Designer</SubType>
     </Page>
     <Resource Include="Fonts\BuxtonSketch.ttf" />
+    <BlendEmbeddedFont Include="Fonts\msjhl.ttc">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
     <Resource Include="Fonts\SketchFlow Print.ttf" />
     <Resource Include="Fonts\SegoeMarker.ttf" />
     <Resource Include="Sketch.Flow" />
@@ -141,6 +147,7 @@
     </VisualStudio>
   </ProjectExtensions>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\Silverlight\v5.0\Microsoft.Expression.Blend.Silverlight.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 	     Other similar extension points exist, see Microsoft.Common.targets.
 	<Target Name="BeforeBuild">

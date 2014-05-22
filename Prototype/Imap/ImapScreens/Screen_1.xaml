@@ -3,9 +3,19 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Screen_1"
-	Width="640" Height="480">
+	Width="640" Height="1129.9">
 
-	<Grid x:Name="LayoutRoot" Background="White"/>
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Grid HorizontalAlignment="Left" Height="224" Margin="104,233,0,0" VerticalAlignment="Top" Width="418">
+			<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="224" Stroke="Black" VerticalAlignment="Top" Width="418"/>
+			<sdk:AutoCompleteBox HorizontalAlignment="Left" Height="48" Margin="10,10,0,0" VerticalAlignment="Top" Width="287" FontFamily="Microsoft JhengHei UI Light" Text="Search ..." FontSize="29.333" IsTextCompletionEnabled="True"/>
+			<Button Content="OK" HorizontalAlignment="Left" Height="48" Margin="309,10,0,0" VerticalAlignment="Top" Width="99" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light" FontSize="21.333"/>
+			<TextBlock HorizontalAlignment="Left" Margin="203,79,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Or" VerticalAlignment="Top" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light" FontSize="21.333"/>
+			<Button Content="Custom search" HorizontalAlignment="Left" Height="58" Margin="10,156,0,0" VerticalAlignment="Top" Width="176" FontSize="21.333" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light"/>
+			<Button Content="Go map" HorizontalAlignment="Left" Height="58" Margin="253,156,0,0" VerticalAlignment="Top" Width="155" FontFamily="Microsoft JhengHei Light" FontSize="21.333"/>
+		</Grid>
+	</Grid>
 </UserControl>
