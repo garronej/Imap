@@ -42,9 +42,10 @@
 			<Button Style="{StaticResource Button-Sketch}" Content="See on the map" HorizontalAlignment="Left" Height="159" Margin="470,10,0,0" VerticalAlignment="Top" Width="160" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light"/>
 			<TextBlock HorizontalAlignment="Left" Height="159" TextWrapping="Wrap" VerticalAlignment="Top" Width="455" Margin="10,10,0,0" Text="Test"/>
 		</Grid>
-		<Button Content="Logout" Style="{StaticResource Button-Sketch}" HorizontalAlignment="Left" Height="82" Margin="439,10,0,0" VerticalAlignment="Top" Width="191"/>
+		<Button Content="Logout" Style="{StaticResource Button-Sketch}" HorizontalAlignment="Left" Height="44" Margin="493,10,0,0" VerticalAlignment="Top" Width="137" FontFamily="Microsoft JhengHei" FontSize="18.667"/>
 		<Grid HorizontalAlignment="Left" Height="257" Margin="10,200,0,0" Grid.Row="1" VerticalAlignment="Top" Width="620">
 			<Button Content="More" Style="{StaticResource Button-Sketch}" Height="237" Margin="460,10,0,0" VerticalAlignment="Top" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light"/>
 		</Grid>
+		<local:IMAPLogo HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="85,0,0,0"/>
 	</Grid>
 </UserControl>
