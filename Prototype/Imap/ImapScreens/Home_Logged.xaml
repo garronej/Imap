@@ -27,6 +27,14 @@
 				<TextBlock Text="{Binding Property6}" Style="{StaticResource BasicTextBlock-Sketch}"/>
 			</StackPanel>
 		</DataTemplate>
+		<DataTemplate x:Key="ItemTemplate2">
+			<StackPanel>
+				<TextBlock Text="{Binding Property1}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property2}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property3}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property4}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+			</StackPanel>
+		</DataTemplate>
 	</UserControl.Resources>
 
 	<Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding Source={StaticResource SampleDataSource}}">
@@ -38,13 +46,14 @@
 		<local:Search_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="108,178,0,0" Width="424"/>
 		<Grid HorizontalAlignment="Left" Height="256" Margin="0,462,0,0" VerticalAlignment="Top" Width="640" Grid.Row="1">
 			<Button Style="{StaticResource Button-Sketch}" Content="Full Schedule(ADE)" HorizontalAlignment="Left" Height="72" Margin="10,174,0,0" VerticalAlignment="Top" Width="319" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light"/>
-			<Button Style="{StaticResource Button-Sketch}" Content="Information on your university" HorizontalAlignment="Left" Height="72" Margin="334,174,0,0" VerticalAlignment="Top" Width="296"/>
+			<Button Style="{StaticResource Button-Sketch}" Content="Information on your university" HorizontalAlignment="Left" Height="72" Margin="334,174,0,0" VerticalAlignment="Top" Width="296" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light"/>
 			<Button Style="{StaticResource Button-Sketch}" Content="See on the map" HorizontalAlignment="Left" Height="159" Margin="470,10,0,0" VerticalAlignment="Top" Width="160" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light"/>
-			<TextBlock HorizontalAlignment="Left" Height="159" TextWrapping="Wrap" VerticalAlignment="Top" Width="455" Margin="10,10,0,0" Text="Test"/>
+			<TextBlock HorizontalAlignment="Left" Height="159" TextWrapping="Wrap" VerticalAlignment="Top" Width="455" Margin="10,10,0,0" Text="Next:" FontFamily="Microsoft JhengHei UI Light"/>
 		</Grid>
 		<Button Content="Logout" Style="{StaticResource Button-Sketch}" HorizontalAlignment="Left" Height="82" Margin="439,10,0,0" VerticalAlignment="Top" Width="191"/>
-		<Grid HorizontalAlignment="Left" Height="257" Margin="10,200,0,0" Grid.Row="1" VerticalAlignment="Top" Width="620">
+		<Grid HorizontalAlignment="Left" Height="257" Margin="10,200,0,0" Grid.Row="1" VerticalAlignment="Top" Width="620" DataContext="{Binding Source={StaticResource BuildingSchedules}}">
 			<Button Content="More" Style="{StaticResource Button-Sketch}" Height="237" Margin="460,10,0,0" VerticalAlignment="Top" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light"/>
+			<ListBox Height="237" Margin="10,10,0,0" Style="{StaticResource ListBox-Sketch}" VerticalAlignment="Center" Width="445" ItemTemplate="{StaticResource ItemTemplate2}" ItemsSource="{Binding Collection}" Background="White" HorizontalAlignment="Left"/>
 		</Grid>
 	</Grid>
 </UserControl>
