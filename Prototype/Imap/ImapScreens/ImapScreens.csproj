@@ -170,6 +170,8 @@
       <SubType>Designer</SubType>
     </Page>
     <Resource Include="blue.jpg" />
+    <Resource Include="Ensimag.png" />
+    <Resource Include="Ensimag_logo_left.jpg" />
     <Resource Include="Fonts\BuxtonSketch.ttf" />
     <BlendEmbeddedFont Include="Fonts\msjhl.ttc">
       <IsSystemFont>True</IsSystemFont>
@@ -179,6 +181,7 @@
     <Resource Include="Fonts\SketchFlow Print.ttf" />
     <Resource Include="Fonts\SegoeMarker.ttf" />
     <DesignTimeOnly Include="SampleData\SampleDataSource\SampleDataSource.xsd" />
+    <Resource Include="logo.gif" />
     <Resource Include="Sketch.Flow" />
   </ItemGroup>
   <ProjectExtensions>
