@@ -11,8 +11,8 @@
 
 	<Grid x:Name="LayoutRoot">
 		<Grid HorizontalAlignment="Left" Height="224" VerticalAlignment="Top" Width="418">
-			<Rectangle Fill="#FFB6B6B6" HorizontalAlignment="Left" Height="224" Stroke="Black" VerticalAlignment="Top" Width="418" Opacity="0.5"/>
-			<sdk:AutoCompleteBox x:Name="myACB" HorizontalAlignment="Left" Height="48" Margin="10,10,0,0" VerticalAlignment="Top" Width="287" FontFamily="Microsoft JhengHei UI Light" Text="Search ..." FontSize="21.333" IsTextCompletionEnabled="True" ItemsSource="{Binding}" Background="#FFECECEC">
+			<Rectangle Fill="#FFB6B6B6" Height="224" Stroke="Black" VerticalAlignment="Top" Opacity="0.5" Margin="-97,0,-96,0"/>
+			<sdk:AutoCompleteBox x:Name="myACB" HorizontalAlignment="Left" Height="48" Margin="-83,10,0,0" VerticalAlignment="Top" Width="474" FontFamily="Microsoft JhengHei UI Light" Text="Search ..." FontSize="21.333" IsTextCompletionEnabled="True" ItemsSource="{Binding}" Background="#FFECECEC">
 				<i:Interaction.Triggers>
 					<i:EventTrigger EventName="SelectionChanged">
 						<ei:ChangePropertyAction TargetName="button" PropertyName="IsEnabled" Value="True"/>
@@ -20,9 +20,9 @@
 				</i:Interaction.Triggers>
 			</sdk:AutoCompleteBox>
 			<TextBlock HorizontalAlignment="Left" Margin="203,79,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Or" VerticalAlignment="Top" FontFamily="Microsoft JhengHei Light" FontSize="21.333"/>
-			<Button x:Name="btnCustmSearch" Content="Custom Search " HorizontalAlignment="Left" Margin="10,156,0,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="155" Height="58" FontFamily="Microsoft JhengHei" FontSize="18.667" Background="#FFFDF9F9"/>
-			<Button x:Name="btnGoMap" Content="Go Map" HorizontalAlignment="Left" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="155" Height="58" FontFamily="Microsoft JhengHei" FontSize="18.667" Background="#FFFDF9F9" Margin="253,156,0,0"/>
-			<Button x:Name="btnSearch" Content="OK" HorizontalAlignment="Left" Height="48" Margin="304,10,0,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="104" FontFamily="Microsoft JhengHei"/>
+			<Button x:Name="btnCustmSearch" Content="Custom Search " HorizontalAlignment="Left" Margin="-83,156,0,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="155" Height="58" FontFamily="Microsoft JhengHei" FontSize="18.667" Background="#FFFDF9F9"/>
+			<Button x:Name="btnGoMap" Content="Go Map" HorizontalAlignment="Left" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="155" Height="58" FontFamily="Microsoft JhengHei" FontSize="18.667" Background="#FFFDF9F9" Margin="345,156,-82,0"/>
+			<Button x:Name="btnSearch" Content="OK" HorizontalAlignment="Left" Height="48" Margin="396,10,-82,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="104" FontFamily="Microsoft JhengHei"/>
 		</Grid>
 		<Image Margin="0,0,418,224" Source="fleur.jpg" Stretch="Fill"/>
 	</Grid>

@@ -10,9 +10,35 @@
 
 	<Grid x:Name="LayoutRoot" Background="White" Height="1130">
 		<Grid HorizontalAlignment="Left" Height="1130" VerticalAlignment="Top" Width="640">
-			<local:LayoutRoot HorizontalAlignment="Left" Margin="0,-6,0,0" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
-			<Image Margin="345,10,10,902" Source="Ensimag.png" Stretch="Fill"/>
-			<Image Margin="10,10,300,902" Source="Ensimag_logo_left.jpg" Stretch="Fill"/>
+			<local:LayoutRoot HorizontalAlignment="Left" Margin="0,0,0,-6" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
+			<Image Margin="397,12,12,966" Source="Ensimag.png" Stretch="Fill"/>
+			<Grid Margin="18,12,337,980">
+				<Rectangle HorizontalAlignment="Left" Height="138" Stroke="Black" VerticalAlignment="Top" Width="285">
+					<Rectangle.Fill>
+						<RadialGradientBrush>
+							<GradientStop Color="Black" Offset="1"/>
+							<GradientStop Color="White"/>
+						</RadialGradientBrush>
+					</Rectangle.Fill>
+				</Rectangle>
+				<Image Margin="4,4,3,5" Source="Ensimag_logo_left.jpg" Stretch="Fill" OpacityMask="Black"/>
+			</Grid>
+			<Grid Margin="123,186,126,691">
+				<Rectangle HorizontalAlignment="Left" Height="253" Stroke="Black" VerticalAlignment="Top" Width="388">
+					<Rectangle.Fill>
+						<RadialGradientBrush>
+							<GradientStop Color="Black" Offset="1"/>
+							<GradientStop Color="White"/>
+						</RadialGradientBrush>
+					</Rectangle.Fill>
+				</Rectangle>
+				<Rectangle HorizontalAlignment="Left" Height="250" Margin="2,2,0,0" Stroke="Black" VerticalAlignment="Top" Width="385" Fill="#FFF9F7F7"/>
+				<Image HorizontalAlignment="Left" Height="149" Margin="48,30,0,0" VerticalAlignment="Top" Width="296" Source="4.jpg">
+					<Image.OpacityMask>
+						<ImageBrush Stretch="Fill"/>
+					</Image.OpacityMask>
+				</Image>
+			</Grid>
 		</Grid>
 	</Grid>
 </UserControl>
