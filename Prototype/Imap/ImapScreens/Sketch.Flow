@@ -22,8 +22,8 @@
       <FileName>Screen_1_1.xaml</FileName>
       <Annotations />
       <Position>
-        <X>133</X>
-        <Y>-81</Y>
+        <X>153</X>
+        <Y>-134</Y>
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
@@ -82,8 +82,8 @@
       <FileName>Map.xaml</FileName>
       <Annotations />
       <Position>
-        <X>142</X>
-        <Y>129</Y>
+        <X>123</X>
+        <Y>157</Y>
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
@@ -106,8 +106,8 @@
       <FileName>Search component.xaml</FileName>
       <Annotations />
       <Position>
-        <X>-131</X>
-        <Y>-104</Y>
+        <X>-213</X>
+        <Y>-105</Y>
       </Position>
       <VisualTag>1</VisualTag>
     </Screen>
@@ -118,8 +118,8 @@
       <FileName>LayoutRoot.xaml</FileName>
       <Annotations />
       <Position>
-        <X>-37</X>
-        <Y>-157</Y>
+        <X>-87</X>
+        <Y>-171</Y>
       </Position>
       <VisualTag>1</VisualTag>
     </Screen>
@@ -210,13 +210,6 @@
       <VisualTag>0</VisualTag>
     </Connection>
     <Connection>
-      <Source>ImapScreens.Screen_1_1</Source>
-      <Target>ImapScreens.LayoutRoot</Target>
-      <Type>Composition</Type>
-      <TransitionType>None</TransitionType>
-      <VisualTag>1</VisualTag>
-    </Connection>
-    <Connection>
       <Source>ImapScreens.Place_data</Source>
       <Target>ImapScreens.LayoutRoot</Target>
       <Type>Composition</Type>
@@ -239,6 +232,20 @@
     </Connection>
     <Connection>
       <Source>ImapScreens.Screen_1</Source>
+      <Target>ImapScreens.LayoutRoot</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Screen_1</Source>
+      <Target>ImapScreens.Search_component</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Screen_1_1</Source>
       <Target>ImapScreens.LayoutRoot</Target>
       <Type>Composition</Type>
       <TransitionType>None</TransitionType>
@@ -289,10 +296,10 @@
     </VisualTag>
   </VisualTags>
   <ViewState>
-    <Zoom>0.33333333333333331</Zoom>
+    <Zoom>0.66666666666666663</Zoom>
     <Center>
-      <X>-42.150333333333379</X>
-      <Y>118.94686218165435</Y>
+      <X>107.62483333333336</X>
+      <Y>9.0734310908270857</Y>
     </Center>
   </ViewState>
 </Data>

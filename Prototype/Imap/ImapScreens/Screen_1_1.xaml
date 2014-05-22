@@ -7,5 +7,7 @@
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Screen_1_1"
 	Width="640" Height="1136">
-	<local:LayoutRoot HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
+	<Grid HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640">
+		<local:LayoutRoot HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
+	</Grid>
 </UserControl>
