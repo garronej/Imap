@@ -6,6 +6,7 @@
 	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity"
 	xmlns:local="clr-namespace:ImapScreens"
 	xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.SampleDataSource"
+	xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Home_Logged"
 	Width="640" Height="1130">
@@ -25,6 +26,20 @@
 				<TextBlock Text="{Binding Property4}" Style="{StaticResource BasicTextBlock-Sketch}"/>
 				<TextBlock Text="{Binding Property5}" Style="{StaticResource BasicTextBlock-Sketch}"/>
 				<TextBlock Text="{Binding Property6}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+			</StackPanel>
+		</DataTemplate>
+		<DataTemplate x:Key="ItemTemplate2">
+			<StackPanel>
+				<TextBlock Text="{Binding Ligne_1}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Ligne_2}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property3}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Id_place}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+			</StackPanel>
+		</DataTemplate>
+		<DataTemplate x:Key="ItemTemplate3">
+			<StackPanel>
+				<TextBlock Text="{Binding Ligne_1}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Ligne_2}" Style="{StaticResource BasicTextBlock-Sketch}"/>
 			</StackPanel>
 		</DataTemplate>
 	</UserControl.Resources>
@@ -52,14 +67,22 @@
 			<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="267" Margin="21,-17,0,0" VerticalAlignment="Top" Width="444" Background="#FFB6ABAB" Opacity="0.6"/>
 		</Grid>
 		<Button Content="Logout" Style="{StaticResource Button-Sketch}" HorizontalAlignment="Left" Height="44" Margin="493,10,0,0" VerticalAlignment="Top" Width="137" FontFamily="Microsoft JhengHei" FontSize="18.667"/>
-		<Grid HorizontalAlignment="Left" Height="331" Margin="10,16,0,0" Grid.Row="2" VerticalAlignment="Top" Width="620">
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="201*"/>
-				<ColumnDefinition Width="22*"/>
-				<ColumnDefinition Width="87*"/>
-			</Grid.ColumnDefinitions>
-			<Button Content="More" Style="{StaticResource Button-Sketch}" Margin="14,10,0,10" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light" Grid.Column="2" FontSize="18.667"/>
-			<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="311" VerticalAlignment="Top" Width="445" Background="#FFC3B9B9" Grid.ColumnSpan="3" Margin="10,10,0,0" Opacity="0.595"/>
+		<Grid HorizontalAlignment="Left" Height="257" Margin="10,44,0,0" Grid.Row="2" VerticalAlignment="Top" Width="620" DataContext="{Binding Source={StaticResource BuildingSchedules}}">
+			<Button x:Name="button" Content="More" Style="{StaticResource Button-Sketch}" Height="237" Margin="460,10,0,0" VerticalAlignment="Top" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light" DataContext="{Binding SelectedItem, ElementName=listBox}" IsEnabled="False">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<ei:SetDataStoreValueAction PropertyName="idSelectedPlace" TargetObject="{Binding Mode=OneWay, Source={StaticResource stateVar}}" Value="{Binding Id_place}"/>
+						<pi:NavigateToScreenAction TargetScreen="ImapScreens.Place_data"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Button>
+			<ListBox x:Name="listBox" Height="237" Margin="0,10" Style="{StaticResource ListBox-Sketch}" VerticalAlignment="Center" Width="445" ItemTemplate="{StaticResource ItemTemplate3}" Background="White" HorizontalAlignment="Left" ItemsSource="{Binding Collection}">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="SelectionChanged">
+						<ei:ChangePropertyAction TargetName="button" PropertyName="IsEnabled" Value="True" TargetObject="{Binding ElementName=button}"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</ListBox>
 		</Grid>
 		<local:IMAPLogo HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="85,0,0,0" Grid.RowSpan="2"/>
 	</Grid>
