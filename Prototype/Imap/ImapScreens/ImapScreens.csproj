@@ -101,6 +101,9 @@
     <Compile Include="SampleData\BuildingSchedules\BuildingSchedules.xaml.cs">
       <DependentUpon>BuildingSchedules.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SampleData\DatabasePlace\DatabasePlace.xaml.cs">
+      <DependentUpon>DatabasePlace.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SampleData\SampleDataSource\SampleDataSource.xaml.cs">
       <DependentUpon>SampleDataSource.xaml</DependentUpon>
     </Compile>
@@ -113,8 +116,8 @@
     <Compile Include="Screen_1_1.xaml.cs">
       <DependentUpon>Screen_1_1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Search component.xaml.cs">
-      <DependentUpon>Search component.xaml</DependentUpon>
+    <Compile Include="SearchComponentUI.xaml.cs">
+      <DependentUpon>SearchComponentUI.xaml</DependentUpon>
     </Compile>
     <Compile Include="_60_view.xaml.cs">
       <DependentUpon>_60_view.xaml</DependentUpon>
@@ -164,6 +167,10 @@
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="SampleData\DatabasePlace\DatabasePlace.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="SampleData\SampleDataSource\SampleDataSource.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
@@ -180,7 +187,7 @@
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Search component.xaml">
+    <Page Include="SearchComponentUI.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -197,6 +204,7 @@
       <SubType>Designer</SubType>
     </Page>
     <Resource Include="4.jpg" />
+    <Resource Include="attentionLogo.png" />
     <Resource Include="blue.jpg" />
     <DesignTimeOnly Include="DataStore\stateVar\stateVar.xsd" />
     <Resource Include="Ensimag.png" />
@@ -216,6 +224,12 @@
     <DesignTimeOnly Include="SampleData\SampleDataSource\SampleDataSource.xsd" />
     <Resource Include="logo.gif" />
     <DesignTimeOnly Include="SampleData\BuildingSchedules\BuildingSchedules.xsd" />
+    <DesignTimeOnly Include="SampleData\DatabasePlace\DatabasePlace.xsd" />
+    <Resource Include="SampleData\DatabasePlace\DatabasePlace_Files\image01.png" />
+    <Resource Include="SampleData\DatabasePlace\DatabasePlace_Files\image02.png" />
+    <Resource Include="SampleData\DatabasePlace\DatabasePlace_Files\image03.png" />
+    <Resource Include="SampleData\DatabasePlace\DatabasePlace_Files\image04.png" />
+    <Resource Include="SampleData\DatabasePlace\DatabasePlace_Files\image05.png" />
     <Resource Include="Sketch.Flow" />
   </ItemGroup>
   <ItemGroup>

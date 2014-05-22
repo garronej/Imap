@@ -7,6 +7,7 @@
 	xmlns:local="clr-namespace:ImapScreens"
 	xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.SampleDataSource"
 	xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Home_Logged"
 	Width="640" Height="1130">
@@ -51,7 +52,6 @@
 			<RowDefinition Height="364*"/>
 		</Grid.RowDefinitions>
 		<local:LayoutRoot HorizontalAlignment="Left" Margin="0,10,0,-16" VerticalAlignment="Top" d:IsPrototypingComposition="True" Grid.RowSpan="3"/>
-		<local:Search_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="116,82,0,0" Width="522" Grid.Row="1"/>
 		<Grid HorizontalAlignment="Left" Height="347" Margin="0,381,0,0" VerticalAlignment="Top" Width="640" Grid.Row="2">
 			<Button Style="{StaticResource Button-Sketch}" Content="Full Schedule(ADE)" HorizontalAlignment="Left" Height="72" Margin="21,263,0,0" VerticalAlignment="Top" Width="308" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light" FontSize="18.667"/>
 			<Button Style="{StaticResource Button-Sketch}" Content="Information About University" HorizontalAlignment="Left" Height="72" Margin="334,263,0,0" VerticalAlignment="Top" Width="296" FontFamily="Microsoft JhengHei" FontSize="18.667"/>
@@ -85,5 +85,6 @@
 			</ListBox>
 		</Grid>
 		<local:IMAPLogo HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="85,0,0,0" Grid.RowSpan="2"/>
+		<local:SearchComponentUI Margin="10,75,10,7" Grid.Row="1" d:IsPrototypingComposition="True" FontFamily="Portable User Interface"/>
 	</Grid>
 </UserControl>

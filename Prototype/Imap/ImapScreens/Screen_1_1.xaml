@@ -11,7 +11,7 @@
 	<Grid HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640">
 		<Grid HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640">
 			<Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-			<local:LayoutRoot HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="-10,0,0,0"/>
+			<local:LayoutRoot HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
 			<local:IMAPLogo Margin="109,10,84,955" d:IsPrototypingComposition="True"/>
 			<Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100">
 				<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="334" Margin="49,194,-470,-428" VerticalAlignment="Top" Width="521" Cursor="SizeNESW" Background="#FFAED1D8">
@@ -22,7 +22,7 @@
 				<RadioButton Content="Universite de Savoie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,323,-274,-262" FontSize="21.333" Height="39" Width="272"/>
 				<RadioButton Content="Universite Stendhal" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" Height="36" Margin="101,367,-253,-303" Width="252"/>
 				<RadioButton Content="Grenoble INP" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" Margin="102,411,-299,-344" Width="297"/>
-				<RadioButton Content="Science Po Grenoble" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" Margin="102,458,-274,-391" Width="272"/>
+				<RadioButton Content="Science Po Grenoble" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" Margin="102,458,-274,-391" Width="272" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei UI Light"/>
 			</Grid>
 			<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="340" VerticalAlignment="Top" Width="520" Margin="50,548,0,0" Background="#FFB4D6D6">
 				<Grid x:Name="LoginPage" Margin="21,89,27,31">

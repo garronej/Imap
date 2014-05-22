@@ -149,8 +149,33 @@
 					</Storyboard>
 				</VisualState>
 			</VisualStateGroup>
+			<VisualStateGroup x:Name="Zoom">
+				<VisualState x:Name="Default">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.FontFamily)" Storyboard.TargetName="layoutRoot">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<FontFamily>Buxton Sketch</FontFamily>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Pressed">
+					<Storyboard>
+						<DoubleAnimation Duration="0" To="-8.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="blockArrow" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="-11.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="blockArrow" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="6.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="blockArrow1" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="-6.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="blockArrow1" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="-6" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="blockArrow2" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="6.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="blockArrow2" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="8" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="blockArrow3" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="8.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="blockArrow3" d:IsOptimized="True"/>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<local:LayoutRoot HorizontalAlignment="Left" Margin="-1,0,0,0" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
+		<local:LayoutRoot x:Name="layoutRoot" HorizontalAlignment="Left" Margin="-1,0,0,0" VerticalAlignment="Top" d:IsPrototypingComposition="True" FontFamily="Buxton Sketch"/>
 		<Grid x:Name="grid" HorizontalAlignment="Left" Height="579" Margin="0,1063,0,0" VerticalAlignment="Top" Width="639">
 			<pc:SketchRectangleSL x:Name="sketchRectangleSL" Height="72" Style="{StaticResource Rectangle-Sketch}" VerticalAlignment="Top" Width="640" Background="White"/>
 			<pc:SketchRectangleSL x:Name="sketchRectangleSL1" Height="578" Style="{StaticResource Rectangle-Sketch}" Width="641" Opacity="0.5" BorderBrush="{x:Null}"/>
@@ -182,5 +207,34 @@
 		</Grid>
 		<Button Content="Back" HorizontalAlignment="Left" Height="72" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="200" FontFamily="Microsoft MHei" FontSize="21.333" Margin="0,1064,0,0"/>
 		<Button Content="Menu" HorizontalAlignment="Left" Height="72" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="200" FontFamily="Microsoft MHei" FontSize="21.333" Margin="440,1063,0,0"/>
+		<Grid HorizontalAlignment="Center" Height="59" VerticalAlignment="Center" Width="319" Margin="0,-1022,0,0">
+			<Rectangle Fill="#FFB6B6B6" Stroke="Black" Opacity="0.5"/>
+			<TextBlock HorizontalAlignment="Center" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="NAME" VerticalAlignment="Center" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei Light" FontSize="29.333"/>
+		</Grid>
+		<Grid HorizontalAlignment="Left" Height="262" Margin="109,113,0,0" VerticalAlignment="Top" Width="434">
+			<Rectangle Fill="#FFB6B6B6" HorizontalAlignment="Left" Height="262" Stroke="Black" VerticalAlignment="Top" Width="434" Opacity="0.5"/>
+			<Image HorizontalAlignment="Center" Height="210" VerticalAlignment="Center" Width="384" Margin="0,-24,0,0" Source="blue.jpg" Stretch="Fill"/>
+			<ed:BlockArrow x:Name="blockArrow2" Fill="White" HorizontalAlignment="Left" Height="55" Margin="19,177.75,0,0" Orientation="Down" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.5,0.5" Opacity="0.8">
+				<ed:BlockArrow.RenderTransform>
+					<CompositeTransform Rotation="43.744"/>
+				</ed:BlockArrow.RenderTransform>
+			</ed:BlockArrow>
+			<ed:BlockArrow x:Name="blockArrow" Fill="White" HorizontalAlignment="Left" Height="55" Margin="20,6.75,0,0" Orientation="Down" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.5,0.5" Opacity="0.8">
+				<ed:BlockArrow.RenderTransform>
+					<CompositeTransform Rotation="135.651"/>
+				</ed:BlockArrow.RenderTransform>
+			</ed:BlockArrow>
+			<ed:BlockArrow x:Name="blockArrow1" Fill="White" HorizontalAlignment="Left" Height="55" Margin="364,6.75,0,0" Orientation="Down" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.5,0.5" Opacity="0.795">
+				<ed:BlockArrow.RenderTransform>
+					<CompositeTransform Rotation="224.839"/>
+				</ed:BlockArrow.RenderTransform>
+			</ed:BlockArrow>
+			<ed:BlockArrow x:Name="blockArrow3" Fill="White" HorizontalAlignment="Left" Height="55" Margin="364,176.75,0,0" Orientation="Down" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.5,0.5" Opacity="0.795">
+				<ed:BlockArrow.RenderTransform>
+					<CompositeTransform Rotation="315.769"/>
+				</ed:BlockArrow.RenderTransform>
+			</ed:BlockArrow>
+			<TextBlock HorizontalAlignment="Center" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Street view" VerticalAlignment="Center" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei Light" Margin="0,0,0,-226" Foreground="Black" FontSize="21.333"/>
+		</Grid>
 	</Grid>
 </UserControl>

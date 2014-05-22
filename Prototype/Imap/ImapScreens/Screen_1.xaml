@@ -11,7 +11,9 @@
 	Width="640" Height="1136">
 	<Grid HorizontalAlignment="Left" Height="1136" Margin="1,0,0,0" VerticalAlignment="Top" Width="639">
 		<local:LayoutRoot HorizontalAlignment="Left" Margin="0,0,-1,0" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
-		<local:Search_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="120,181,0,0"/>
 		<local:IMAPLogo HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="447" d:IsPrototypingComposition="True" Margin="120,10,0,0"/>
+		<local:SearchComponentUI HorizontalAlignment="Left" Height="224" VerticalAlignment="Top" Width="620" d:IsPrototypingComposition="True" Margin="10,246,0,0"/>
+		<ListBox x:Name="PlaceSelector" HorizontalAlignment="Left" Height="133" Margin="120,589,0,0" Style="{StaticResource ListBox-Sketch}" VerticalAlignment="Top" Width="254"/>
+		<ListBox x:Name="ShoolSelector" HorizontalAlignment="Left" Height="99" Margin="120,727,0,0" Style="{StaticResource ListBox-Sketch}" VerticalAlignment="Top" Width="254"/>
 	</Grid>
 </UserControl>
