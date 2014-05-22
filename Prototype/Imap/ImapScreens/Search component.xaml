@@ -15,7 +15,7 @@
 			<sdk:AutoCompleteBox x:Name="myACB" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="msjhl.ttc#Microsoft JhengHei UI Light" Text="Search ..." FontSize="21.333" IsTextCompletionEnabled="True" ItemsSource="{Binding}" Background="#FFECECEC">
 				<i:Interaction.Triggers>
 					<i:EventTrigger EventName="SelectionChanged">
-						<ei:ChangePropertyAction TargetName="button" PropertyName="IsEnabled" Value="True"/>
+						<ei:ChangePropertyAction TargetName="button" PropertyName="IsEnabled" Value="True" TargetObject="{Binding ElementName=btnSearch}"/>
 					</i:EventTrigger>
 				</i:Interaction.Triggers>
 			</sdk:AutoCompleteBox>
