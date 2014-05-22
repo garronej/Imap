@@ -1,0 +1,17 @@
+*.dep *.aps *.vbw *.suo *.obj *.ncb *.plg *.bsc *.ilk 
+*.exp *.sbr *.opt *.pdb *.idb *.pch *.res *.user
+
+*\obj
+*\bin
+*\Debug
+*\Release
+
+./Resharp*
+
+Thumbs.db
+
+*.exe
+*.dll
+Prototype/Imap/ImapScreens/obj/Debug/Google_Calendar.g.cs
+Prototype/Imap/ImapScreens/obj/Debug/Home_Logged.g.cs
+*.dll

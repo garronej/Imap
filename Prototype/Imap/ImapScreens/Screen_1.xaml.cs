@@ -16,6 +16,7 @@ namespace ImapScreens
 		{
 			// Required to initialize variables
 			InitializeComponent();
+					
 		}
 	}
 }
