@@ -37,14 +37,14 @@
 		<local:LayoutRoot HorizontalAlignment="Left" Margin="0,0,0,-6" VerticalAlignment="Top" d:IsPrototypingComposition="True" Grid.RowSpan="2"/>
 		<local:Search_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="108,178,0,0" Width="424"/>
 		<Grid HorizontalAlignment="Left" Height="256" Margin="0,462,0,0" VerticalAlignment="Top" Width="640" Grid.Row="1">
-			<Button Content="Full Schedule(ADE)" HorizontalAlignment="Left" Height="72" Margin="10,174,0,0" VerticalAlignment="Top" Width="319"/>
-			<Button Content="Information on your university" HorizontalAlignment="Left" Height="72" Margin="334,174,0,0" VerticalAlignment="Top" Width="296"/>
-			<Button Content="See on the map" HorizontalAlignment="Left" Height="159" Margin="470,10,0,0" VerticalAlignment="Top" Width="160"/>
+			<Button Style="{StaticResource Button-Sketch}" Content="Full Schedule(ADE)" HorizontalAlignment="Left" Height="72" Margin="10,174,0,0" VerticalAlignment="Top" Width="319" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light"/>
+			<Button Style="{StaticResource Button-Sketch}" Content="Information on your university" HorizontalAlignment="Left" Height="72" Margin="334,174,0,0" VerticalAlignment="Top" Width="296"/>
+			<Button Style="{StaticResource Button-Sketch}" Content="See on the map" HorizontalAlignment="Left" Height="159" Margin="470,10,0,0" VerticalAlignment="Top" Width="160" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light"/>
 			<TextBlock HorizontalAlignment="Left" Height="159" TextWrapping="Wrap" VerticalAlignment="Top" Width="455" Margin="10,10,0,0" Text="Test"/>
 		</Grid>
-		<Button Content="Logout" HorizontalAlignment="Left" Height="82" Margin="439,10,0,0" VerticalAlignment="Top" Width="191"/>
+		<Button Content="Logout" Style="{StaticResource Button-Sketch}" HorizontalAlignment="Left" Height="82" Margin="439,10,0,0" VerticalAlignment="Top" Width="191"/>
 		<Grid HorizontalAlignment="Left" Height="257" Margin="10,200,0,0" Grid.Row="1" VerticalAlignment="Top" Width="620">
-			<Button Content="More" Height="237" Margin="460,10,0,0" VerticalAlignment="Top"/>
+			<Button Content="More" Style="{StaticResource Button-Sketch}" Height="237" Margin="460,10,0,0" VerticalAlignment="Top" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light"/>
 		</Grid>
 	</Grid>
 </UserControl>
