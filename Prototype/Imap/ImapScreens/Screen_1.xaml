@@ -11,7 +11,7 @@
 	Width="640" Height="1136">
 	<Grid HorizontalAlignment="Left" Height="1136" Margin="1,0,0,0" VerticalAlignment="Top" Width="639">
 		<local:LayoutRoot HorizontalAlignment="Left" Margin="0,0,-1,0" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
-		<local:Search_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="29,222,0,0"/>
+		<local:Search_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="120,181,0,0"/>
 		<local:IMAPLogo HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="447" d:IsPrototypingComposition="True" Margin="120,10,0,0"/>
 	</Grid>
 </UserControl>

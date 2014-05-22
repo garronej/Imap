@@ -8,6 +8,6 @@
 	d:DesignWidth="176" d:DesignHeight="68" Height="68" Width="176">
 
 	<Grid x:Name="LayoutRoot">
-		<TextBlock HorizontalAlignment="Left" Height="68" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="LOGIN" VerticalAlignment="Top" Width="176" FontSize="48" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light" TextAlignment="Center" FontWeight="Bold"/>
+		<TextBlock x:Name="loginLogo" HorizontalAlignment="Left" Height="68" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="LOGIN" VerticalAlignment="Top" Width="232" FontSize="48" FontFamily="Microsoft JhengHei Light" TextAlignment="Center" FontWeight="Bold" Margin="-28,0"/>
 	</Grid>
 </UserControl>

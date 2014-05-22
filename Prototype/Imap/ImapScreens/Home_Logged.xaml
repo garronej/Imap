@@ -5,11 +5,46 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity"
 	xmlns:local="clr-namespace:ImapScreens"
+	xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.SampleDataSource"
+	xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Home_Logged"
 	Width="640" Height="1130">
 
-	<Grid x:Name="LayoutRoot" Background="White">
+	<UserControl.Resources>
+		<SampleData:SampleDataSource x:Key="SampleDataSource" d:IsDataSource="True"/>
+		<DataTemplate x:Key="ItemTemplate">
+			<StackPanel>
+				<TextBlock Text="{Binding Property1}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+			</StackPanel>
+		</DataTemplate>
+		<DataTemplate x:Key="ItemTemplate1">
+			<StackPanel>
+				<TextBlock Text="{Binding Property1}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property2}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property3}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property4}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property5}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property6}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+			</StackPanel>
+		</DataTemplate>
+		<DataTemplate x:Key="ItemTemplate2">
+			<StackPanel>
+				<TextBlock Text="{Binding Ligne_1}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Ligne_2}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Property3}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Id_place}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+			</StackPanel>
+		</DataTemplate>
+		<DataTemplate x:Key="ItemTemplate3">
+			<StackPanel>
+				<TextBlock Text="{Binding Ligne_1}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+				<TextBlock Text="{Binding Ligne_2}" Style="{StaticResource BasicTextBlock-Sketch}"/>
+			</StackPanel>
+		</DataTemplate>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding Source={StaticResource SampleDataSource}}">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="201*"/>
 			<RowDefinition Height="364*"/>
@@ -17,14 +52,30 @@
 		<local:LayoutRoot HorizontalAlignment="Left" Margin="0,0,0,-6" VerticalAlignment="Top" d:IsPrototypingComposition="True" Grid.RowSpan="2"/>
 		<local:Search_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="108,178,0,0" Width="424"/>
 		<Grid HorizontalAlignment="Left" Height="256" Margin="0,462,0,0" VerticalAlignment="Top" Width="640" Grid.Row="1">
-			<Button Content="Full Schedule(ADE)" HorizontalAlignment="Left" Height="72" Margin="10,174,0,0" VerticalAlignment="Top" Width="319"/>
-			<Button Content="Information on your university" HorizontalAlignment="Left" Height="72" Margin="334,174,0,0" VerticalAlignment="Top" Width="296"/>
-			<Button Content="See on the map" HorizontalAlignment="Left" Height="159" Margin="470,10,0,0" VerticalAlignment="Top" Width="160"/>
-			<TextBox HorizontalAlignment="Left" Height="159" Margin="10,10,0,0" TextWrapping="Wrap" Text="Next" VerticalAlignment="Top" Width="455"/>
+			<Button Style="{StaticResource Button-Sketch}" Content="Full Schedule(ADE)" HorizontalAlignment="Left" Height="72" Margin="10,174,0,0" VerticalAlignment="Top" Width="319" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light"/>
+			<Button Style="{StaticResource Button-Sketch}" Content="Information on your university" HorizontalAlignment="Left" Height="72" Margin="334,174,0,0" VerticalAlignment="Top" Width="296" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light"/>
+			<Button Style="{StaticResource Button-Sketch}" Content="See on the map" HorizontalAlignment="Left" Height="159" Margin="470,10,0,0" VerticalAlignment="Top" Width="160" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light"/>
+			<TextBlock HorizontalAlignment="Left" Height="159" TextWrapping="Wrap" VerticalAlignment="Top" Width="455" Margin="10,10,0,0" Text="Next:" FontFamily="Microsoft JhengHei UI Light"/>
 		</Grid>
-		<Button Content="Logout" HorizontalAlignment="Left" Height="82" Margin="439,10,0,0" VerticalAlignment="Top" Width="191"/>
-		<Grid HorizontalAlignment="Left" Height="257" Margin="10,200,0,0" Grid.Row="1" VerticalAlignment="Top" Width="620">
-			<Button Content="More" Height="237" Margin="460,10,0,0" VerticalAlignment="Top"/>
+
+		<Button Content="Logout" Style="{StaticResource Button-Sketch}" HorizontalAlignment="Left" Height="44" Margin="493,10,0,0" VerticalAlignment="Top" Width="137" FontFamily="Microsoft JhengHei" FontSize="18.667"/>
+		<Grid HorizontalAlignment="Left" Height="257" Margin="10,200,0,0" Grid.Row="1" VerticalAlignment="Top" Width="620" DataContext="{Binding Source={StaticResource BuildingSchedules}}">
+			<Button x:Name="button" Content="More" Style="{StaticResource Button-Sketch}" Height="237" Margin="460,10,0,0" VerticalAlignment="Top" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei UI Light" DataContext="{Binding SelectedItem, ElementName=listBox}" IsEnabled="False">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<ei:SetDataStoreValueAction PropertyName="idSelectedPlace" TargetObject="{Binding Mode=OneWay, Source={StaticResource stateVar}}" Value="{Binding Id_place}"/>
+						<pi:NavigateToScreenAction TargetScreen="ImapScreens.Place_data"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Button>
+			<ListBox x:Name="listBox" Height="237" Margin="0,10" Style="{StaticResource ListBox-Sketch}" VerticalAlignment="Center" Width="445" ItemTemplate="{StaticResource ItemTemplate3}" Background="White" HorizontalAlignment="Left" ItemsSource="{Binding Collection}">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="SelectionChanged">
+						<ei:ChangePropertyAction TargetName="button" PropertyName="IsEnabled" Value="True" TargetObject="{Binding ElementName=button}"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</ListBox>
 		</Grid>
+		<local:IMAPLogo HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="85,0,0,0"/>
 	</Grid>
 </UserControl>
