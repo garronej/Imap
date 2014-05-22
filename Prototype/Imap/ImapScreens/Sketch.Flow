@@ -296,6 +296,13 @@
       <TransitionType>None</TransitionType>
       <VisualTag>1</VisualTag>
     </Connection>
+    <Connection>
+      <Source>ImapScreens.School_data</Source>
+      <Target>ImapScreens.LayoutRoot</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
   </Connections>
   <PrototypeRevision>0</PrototypeRevision>
   <BrandingText>Microsoft SketchFlow Prototype</BrandingText>
@@ -341,10 +348,10 @@
     </VisualTag>
   </VisualTags>
   <ViewState>
-    <Zoom>0.66666666666666663</Zoom>
+    <Zoom>0.5</Zoom>
     <Center>
-      <X>148.97233333333361</X>
-      <Y>-199.75471698113205</Y>
+      <X>43.102000000000487</X>
+      <Y>-126.4956055474924</Y>
     </Center>
   </ViewState>
 </Data>
