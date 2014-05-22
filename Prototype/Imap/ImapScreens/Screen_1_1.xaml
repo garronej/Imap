@@ -4,6 +4,7 @@
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:local="clr-namespace:ImapScreens"
+	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Screen_1_1"
 	Width="640" Height="1136">
@@ -30,7 +31,13 @@
 						<LineBreak/>
 						<Run Text=" Password"/>
 					</TextBlock>
-					<Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Height="34" Margin="172,180,0,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="100" FontFamily="Microsoft JhengHei Light" FontSize="13.333"/>
+					<Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Height="34" Margin="172,180,0,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="100" FontFamily="Microsoft JhengHei Light" FontSize="13.333">
+						<i:Interaction.Triggers>
+							<i:EventTrigger EventName="Click">
+								<pi:NavigateToScreenAction TargetScreen="ImapScreens.Home_Logged"/>
+							</i:EventTrigger>
+						</i:Interaction.Triggers>
+					</Button>
 					<Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Height="34" Margin="296,181,0,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="100" FontFamily="Microsoft JhengHei Light" FontSize="13.333"/>
 				</Grid>
 			</Border>
@@ -38,15 +45,14 @@
 			<PasswordBox HorizontalAlignment="Left" Height="30" Margin="242,760,0,0" Style="{StaticResource PasswordBox-Sketch}" VerticalAlignment="Top" Width="228" Password="pqpassword"/>
 			<Grid HorizontalAlignment="Left" Height="100" Margin="0,1036,0,0" VerticalAlignment="Top" Width="630">
 				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="199*"/>
+					<ColumnDefinition Width="134*"/>
+					<ColumnDefinition Width="65*"/>
 					<ColumnDefinition Width="11*"/>
 				</Grid.ColumnDefinitions>
 				<Button x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Height="60" Margin="0,40,0,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="201" FontFamily="Microsoft JhengHei Light" FontSize="13.333"/>
-				<Button x:Name="btnMenu" Content="MENU" HorizontalAlignment="Left" Height="60" Margin="427,42,0,-2" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="201" FontFamily="Microsoft JhengHei Light" FontSize="13.333" Grid.ColumnSpan="2"/>
-			</Grid>
-			<Grid HorizontalAlignment="Left" Height="58" Margin="242,576,0,0" VerticalAlignment="Top" Width="174">
-				<local:loginLabel VerticalAlignment="Top" Height="76" Margin="-24,0,-120,-18" Width="Auto" FontSize="9.333" FontFamily="Microsoft JhengHei Light" RenderTransformOrigin="0.742,0.526"/>
+				<Button x:Name="btnMenu" Content="MENU" HorizontalAlignment="Left" Height="60" Margin="29,42,-2,-2" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="201" FontFamily="Microsoft JhengHei Light" FontSize="13.333" Grid.ColumnSpan="2" Grid.Column="1"/>
 			</Grid>
 		</Grid>
+		<TextBlock HorizontalAlignment="Left" Height="58" Margin="231,563,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="LOGIN" VerticalAlignment="Top" Width="205" FontFamily="Microsoft JhengHei" FontSize="48"/>
 	</Grid>
 </UserControl>
