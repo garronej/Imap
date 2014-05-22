@@ -288,7 +288,6 @@
       <VisualTag>1</VisualTag>
     </Connection>
     <Connection>
-<<<<<<< HEAD
       <Source>ImapScreens.Screen_1</Source>
       <Target>ImapScreens.Navigate_component</Target>
       <Type>Composition</Type>
@@ -298,34 +297,20 @@
     <Connection>
       <Source>ImapScreens.Place_data</Source>
       <Target>ImapScreens.Navigate_component</Target>
-=======
-      <Source>ImapScreens.Screen_1_1</Source>
-      <Target>ImapScreens.IMAPLogo</Target>
->>>>>>> afc57a376a3d2385f8d1fd1e0d679a11ec488b86
       <Type>Composition</Type>
       <TransitionType>None</TransitionType>
       <VisualTag>1</VisualTag>
     </Connection>
     <Connection>
-<<<<<<< HEAD
       <Source>ImapScreens.Home_Logged</Source>
       <Target>ImapScreens.Navigate_component</Target>
-=======
-      <Source>ImapScreens._60_view</Source>
-      <Target>ImapScreens.IMAPLogo</Target>
->>>>>>> afc57a376a3d2385f8d1fd1e0d679a11ec488b86
       <Type>Composition</Type>
       <TransitionType>None</TransitionType>
       <VisualTag>1</VisualTag>
     </Connection>
     <Connection>
-<<<<<<< HEAD
       <Source>ImapScreens.Screen_1_1</Source>
       <Target>ImapScreens.Navigate_component</Target>
-=======
-      <Source>ImapScreens.Screen_1</Source>
-      <Target>ImapScreens.IMAPLogo</Target>
->>>>>>> afc57a376a3d2385f8d1fd1e0d679a11ec488b86
       <Type>Composition</Type>
       <TransitionType>None</TransitionType>
       <VisualTag>1</VisualTag>
@@ -377,13 +362,8 @@
   <ViewState>
     <Zoom>0.5</Zoom>
     <Center>
-<<<<<<< HEAD
       <X>-40.096376332988939</X>
       <Y>-10.499869656675287</Y>
-=======
-      <X>148.97233333333361</X>
-      <Y>-199.75471698113205</Y>
->>>>>>> afc57a376a3d2385f8d1fd1e0d679a11ec488b86
     </Center>
   </ViewState>
 </Data>

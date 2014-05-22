@@ -8,12 +8,6 @@
 	x:Class="ImapScreens.Screen_1_1"
 	Width="640" Height="1136">
 	<Grid HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640">
-<<<<<<< HEAD
-		<local:LayoutRoot HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
-		<TextBlock Height="171" Margin="109,10,84,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="IMAP" VerticalAlignment="Top" Width="447" FontFamily="Portable User Interface" TextAlignment="Center" LineHeight="96" FontSize="96" Foreground="#FF252323"/>
-		<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="564" Margin="58,162,0,0" VerticalAlignment="Top" Width="521"/>
-		<local:Navigate_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="0,1064,0,0"/>
-=======
 		<Grid HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640">
 			<Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
 			<local:LayoutRoot HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="-10,10,0,-10"/>
@@ -39,6 +33,5 @@
 			<TextBox HorizontalAlignment="Left" Height="34" Margin="242,682,0,0" Style="{StaticResource BasicTextBox-Sketch}" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="228" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft JhengHei Light"/>
 			<PasswordBox HorizontalAlignment="Left" Height="30" Margin="242,742,0,0" Style="{StaticResource PasswordBox-Sketch}" VerticalAlignment="Top" Width="228" Password="pqpassword"/>
 		</Grid>
->>>>>>> afc57a376a3d2385f8d1fd1e0d679a11ec488b86
 	</Grid>
 </UserControl>
