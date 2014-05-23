@@ -8,5 +8,7 @@
   <xs:element name="stateVar" type="tns:stateVar" />
   <xs:complexType name="stateVar">
     <xs:attribute name="idSelectedPlace" type="xs:double" />
+    <xs:attribute name="userName" type="xs:string" />
+    <xs:attribute name="isLoged" type="xs:boolean" />
   </xs:complexType>
 </xs:schema>

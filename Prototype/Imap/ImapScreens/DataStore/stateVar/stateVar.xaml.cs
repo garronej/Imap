@@ -77,6 +77,54 @@ namespace Expression.Blend.DataStore.stateVar
 				}
 			}
 		}
+
+		private string _userName = string.Empty;
+
+		public string userName
+		{
+			get
+			{
+				return this._userName;
+			}
+
+			set
+			{
+				if(!this.AssignementAllowed)
+				{
+					return;
+				}
+				
+				if (this._userName != value)
+				{
+					this._userName = value;
+					this.OnPropertyChanged("userName");
+				}
+			}
+		}
+
+		private bool _isLoged = false;
+
+		public bool isLoged
+		{
+			get
+			{
+				return this._isLoged;
+			}
+
+			set
+			{
+				if(!this.AssignementAllowed)
+				{
+					return;
+				}
+				
+				if (this._isLoged != value)
+				{
+					this._isLoged = value;
+					this.OnPropertyChanged("isLoged");
+				}
+			}
+		}
 	}
 
 	public class stateVar : System.ComponentModel.INotifyPropertyChanged
@@ -126,6 +174,36 @@ namespace Expression.Blend.DataStore.stateVar
 			set
 			{
 				stateVarGlobalStorage.Singleton.idSelectedPlace = value;
+			}
+		}
+
+		private string _userName = string.Empty;
+
+		public string userName
+		{
+			get
+			{
+				return stateVarGlobalStorage.Singleton.userName;
+			}
+
+			set
+			{
+				stateVarGlobalStorage.Singleton.userName = value;
+			}
+		}
+
+		private bool _isLoged = false;
+
+		public bool isLoged
+		{
+			get
+			{
+				return stateVarGlobalStorage.Singleton.isLoged;
+			}
+
+			set
+			{
+				stateVarGlobalStorage.Singleton.isLoged = value;
 			}
 		}
 	}

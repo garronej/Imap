@@ -46,7 +46,7 @@
 		<Image HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640" Source="blue.jpg" Stretch="Fill"/>
 		<local:IMAPLogo HorizontalAlignment="Left" Margin="116,10,0,0" VerticalAlignment="Top"/>
 		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="722.037" Margin="8.4,260.963,0,0" Stroke="Black" VerticalAlignment="Top" Width="620" Opacity="0.5"/>
-		<RadioButton Content="Université Joseph Fourier" HorizontalAlignment="Left" Margin="56.4,280,0,0" Style="{DynamicResource RadioButton-Sketch}" VerticalAlignment="Top" FontSize="32" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light"/>
+		<RadioButton Content="Université Joseph Fourier" HorizontalAlignment="Left" Margin="56.4,280,0,0" Style="{DynamicResource RadioButton-Sketch}" VerticalAlignment="Top" FontSize="26.667" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light"/>
 		<RadioButton Content="Université Mendès France" HorizontalAlignment="Left" Margin="55.206,424.686,0,0" Style="{DynamicResource RadioButton-Sketch}" VerticalAlignment="Top" FontSize="32" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light"/>
 		<RadioButton Content="Université Stendhal" HorizontalAlignment="Left" Margin="56.4,499.6,0,0" Style="{DynamicResource RadioButton-Sketch}" VerticalAlignment="Top" FontSize="32" FontFamily="/WpfPrototype3.Screens;component/Fonts/#Microsoft JhengHei Light"/>
 		<TextBox HorizontalAlignment="Left" Height="58" Margin="56.4,781.2,0,0" Style="{DynamicResource BasicTextBox-Sketch}" TextWrapping="Wrap" VerticalAlignment="Top" Width="368" Text="{Binding name}"/>

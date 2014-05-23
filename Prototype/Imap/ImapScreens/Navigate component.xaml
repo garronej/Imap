@@ -3,12 +3,42 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Navigate_component"
 	d:DesignWidth="639" d:DesignHeight="86" Height="72" Width="639">
 
 	<Grid x:Name="LayoutRoot">
-		<Button Content="Menu" HorizontalAlignment="Left" Height="72" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="200" FontFamily="Microsoft MHei" Margin="439,0,0,0" FontSize="21.333"/>
-		<Button Content="Back" HorizontalAlignment="Left" Height="72" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="200" FontFamily="Microsoft MHei" FontSize="21.333"/>
+		<Button Content="Menu" HorizontalAlignment="Left" Height="72" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="200" FontFamily="Microsoft MHei" Margin="439,0,0,0" FontSize="21.333">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<i:Interaction.Behaviors>
+						<ei:ConditionBehavior>
+							<ei:ConditionalExpression>
+								<ei:ComparisonCondition LeftOperand="{Binding isLoged, Source={StaticResource stateVar}}" Operator="NotEqual" RightOperand="true"/>
+							</ei:ConditionalExpression>
+						</ei:ConditionBehavior>
+					</i:Interaction.Behaviors>
+					<pi:NavigateToScreenAction TargetScreen="ImapScreens.Home_Logged"/>
+				</i:EventTrigger>
+				<i:EventTrigger EventName="Click">
+					<i:Interaction.Behaviors>
+						<ei:ConditionBehavior>
+							<ei:ConditionalExpression>
+								<ei:ComparisonCondition LeftOperand="{Binding isLoged, Source={StaticResource stateVar}}" RightOperand="false"/>
+							</ei:ConditionalExpression>
+						</ei:ConditionBehavior>
+					</i:Interaction.Behaviors>
+					<pi:NavigateToScreenAction TargetScreen="ImapScreens.Screen_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Back" HorizontalAlignment="Left" Height="72" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="200" FontFamily="Microsoft MHei" FontSize="21.333">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateBackAction/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
 	</Grid>
 </UserControl>

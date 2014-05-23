@@ -5,54 +5,96 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:local="clr-namespace:ImapScreens"
 	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity"
+	xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" xmlns:ee="http://schemas.microsoft.com/expression/2010/effects"
 	mc:Ignorable="d"
 	x:Class="ImapScreens.Screen_1_1"
 	Width="640" Height="1136">
-	<Grid HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640">
+	<Grid HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640" DataContext="{Binding Source={StaticResource stateVar}}">
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="ErorStates">
+				<VisualStateGroup.Transitions>
+					<VisualTransition From="NoError" GeneratedDuration="0:0:0.4" To="Error">
+						<ei:ExtendedVisualStateManager.TransitionEffect>
+							<ee:FadeTransitionEffect/>
+						</ei:ExtendedVisualStateManager.TransitionEffect>
+					</VisualTransition>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="NoError"/>
+				<VisualState x:Name="Error">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="grid">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Thickness>128,354,-476,0</Thickness>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<VisualStateManager.CustomVisualStateManager>
+			<ei:ExtendedVisualStateManager/>
+		</VisualStateManager.CustomVisualStateManager>
 		<Grid HorizontalAlignment="Left" Height="1136" VerticalAlignment="Top" Width="640">
-			<Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
 			<local:LayoutRoot HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True"/>
 			<local:IMAPLogo Margin="109,10,84,955" d:IsPrototypingComposition="True"/>
-			<Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100">
-				<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="334" Margin="49,194,-470,-428" VerticalAlignment="Top" Width="521" Cursor="SizeNESW" Background="#FFAED1D8">
-					<Border BorderBrush="Black" BorderThickness="1"/>
-				</Border>
-				<RadioButton Content="Universite Joseph Fourier" IsChecked="True" FontSize="21.333" GroupName="university" HorizontalAlignment="Left" BorderThickness="1" Margin="101,223,-411,-157" Width="410" Cursor="SizeNESW"/>
-				<RadioButton Content="Universite Pierre Mendes" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="101,272,-299,-219" FontSize="21.333" Height="47" Width="298"/>
-				<RadioButton Content="Universite de Savoie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,323,-274,-262" FontSize="21.333" Height="39" Width="272"/>
-				<RadioButton Content="Universite Stendhal" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" Height="36" Margin="101,367,-253,-303" Width="252"/>
-				<RadioButton Content="Grenoble INP" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" Margin="102,411,-299,-344" Width="297"/>
-				<RadioButton Content="Science Po Grenoble" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" Margin="102,458,-274,-391" Width="272" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei UI Light"/>
-			</Grid>
-			<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="340" VerticalAlignment="Top" Width="520" Margin="50,548,0,0" Background="#FFB4D6D6">
-				<Grid x:Name="LoginPage" Margin="21,89,27,31">
-					<TextBlock HorizontalAlignment="Left" Height="104" Margin="10,46,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontFamily="Microsoft JhengHei Light" FontSize="18.667">
-						<Run Text="Username "/>
-						<LineBreak/>
-						<Run Text=" Password"/>
-					</TextBlock>
-					<Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Height="34" Margin="172,180,0,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="100" FontFamily="Microsoft JhengHei Light" FontSize="13.333">
-						<i:Interaction.Triggers>
-							<i:EventTrigger EventName="Click">
-								<pi:NavigateToScreenAction TargetScreen="ImapScreens.Home_Logged"/>
-							</i:EventTrigger>
-						</i:Interaction.Triggers>
-					</Button>
-					<Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Height="34" Margin="296,181,0,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="100" FontFamily="Microsoft JhengHei Light" FontSize="13.333"/>
-				</Grid>
-			</Border>
-			<TextBox HorizontalAlignment="Left" Height="34" Margin="242,682,0,0" Style="{StaticResource BasicTextBox-Sketch}" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="228" FontFamily="Microsoft JhengHei Light"/>
-			<PasswordBox HorizontalAlignment="Left" Height="30" Margin="242,760,0,0" Style="{StaticResource PasswordBox-Sketch}" VerticalAlignment="Top" Width="228" Password="pqpassword"/>
-			<Grid HorizontalAlignment="Left" Height="100" Margin="0,1036,0,0" VerticalAlignment="Top" Width="630">
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="134*"/>
-					<ColumnDefinition Width="65*"/>
-					<ColumnDefinition Width="11*"/>
-				</Grid.ColumnDefinitions>
-				<Button x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Height="60" Margin="0,40,0,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="201" FontFamily="Microsoft JhengHei Light" FontSize="13.333"/>
-				<Button x:Name="btnMenu" Content="MENU" HorizontalAlignment="Left" Height="60" Margin="29,42,-2,-2" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="201" FontFamily="Microsoft JhengHei Light" FontSize="13.333" Grid.ColumnSpan="2" Grid.Column="1"/>
-			</Grid>
+			<TextBox HorizontalAlignment="Center" Height="63" Style="{StaticResource Note-Sketch}" TextWrapping="Wrap" Text="Same form as wificampus !" VerticalAlignment="Center" Width="562" FontFamily="Buxton Sketch" Margin="39,176,39,897" TextAlignment="Center" FontSize="26.667"/>
+			<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="777" Stroke="Black" VerticalAlignment="Center" Width="562" Margin="39,259,39,100" Opacity="0.5"/>
+			<RadioButton Content="Universite Joseph Fourier" HorizontalAlignment="Center" Style="{StaticResource RadioButton-Sketch}" VerticalAlignment="Center" FontSize="33.333" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei UI Light" Margin="0,-498,0,0"/>
+			<RadioButton Content="Universite Joseph Fourier" HorizontalAlignment="Center" Style="{StaticResource RadioButton-Sketch}" VerticalAlignment="Center" FontSize="33.333" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei UI Light" Margin="124,378,123,716"/>
+			<RadioButton Content="Universite Joseph Fourier" HorizontalAlignment="Center" Style="{StaticResource RadioButton-Sketch}" VerticalAlignment="Center" FontSize="33.333" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei UI Light" Margin="124,452,123,642"/>
+			<RadioButton Content="Universite Joseph Fourier" HorizontalAlignment="Center" Style="{StaticResource RadioButton-Sketch}" VerticalAlignment="Center" FontSize="33.333" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei UI Light" Margin="124,530,123,564"/>
+			<RadioButton Content="Universite Joseph Fourier" HorizontalAlignment="Center" Style="{StaticResource RadioButton-Sketch}" VerticalAlignment="Center" FontSize="33.333" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei UI Light" Margin="124,618,123,476"/>
+			<RadioButton Content="Universite Joseph Fourier" HorizontalAlignment="Center" Style="{StaticResource RadioButton-Sketch}" VerticalAlignment="Center" FontSize="33.333" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei UI Light" Margin="124,698,123,396"/>
+			<TextBox x:Name="textBox" HorizontalAlignment="Left" Height="65" Margin="124,786,0,0" Style="{StaticResource BasicTextBox-Sketch}" TextWrapping="Wrap" Text="{Binding userName, Mode=TwoWay}" VerticalAlignment="Top" Width="345" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei Light" FontSize="26.667"/>
+			<PasswordBox HorizontalAlignment="Left" Height="65" Margin="124,905,0,0" Style="{StaticResource PasswordBox-Sketch}" VerticalAlignment="Top" Width="345" Password="Password ..." FontFamily="Buxton Sketch">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="PasswordChanged">
+						<ei:ChangePropertyAction TargetObject="{Binding ElementName=button}" PropertyName="IsEnabled" TargetName="button" Value="True"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</PasswordBox>
+			<Button x:Name="button" Content="Ok" HorizontalAlignment="Left" Height="65" Margin="490,905,0,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Width="90" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei Light" IsEnabled="False" DataContext="{Binding ElementName=textBox}">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<i:Interaction.Behaviors>
+							<ei:ConditionBehavior>
+								<ei:ConditionalExpression>
+									<ei:ComparisonCondition LeftOperand="{Binding userName, Source={StaticResource stateVar}}" Operator="NotEqual" RightOperand="notalowed"/>
+								</ei:ConditionalExpression>
+							</ei:ConditionBehavior>
+						</i:Interaction.Behaviors>
+						<pi:NavigateToScreenAction TargetScreen="ImapScreens.Home_Logged"/>
+					</i:EventTrigger>
+					<i:EventTrigger EventName="Click">
+						<i:Interaction.Behaviors>
+							<ei:ConditionBehavior>
+								<ei:ConditionalExpression>
+									<ei:ComparisonCondition LeftOperand="{Binding userName, Source={StaticResource stateVar}}" Operator="Equal" RightOperand="notalowed"/>
+								</ei:ConditionalExpression>
+							</ei:ConditionBehavior>
+						</i:Interaction.Behaviors>
+						<pi:ActivateStateAction TargetState="Error"/>
+					</i:EventTrigger>
+					<i:EventTrigger EventName="Click">
+						<ei:SetDataStoreValueAction PropertyName="isLoged" TargetObject="{Binding Mode=OneWay, Source={StaticResource stateVar}}" Value="true"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Button>
+			<local:Navigate_component HorizontalAlignment="Left" VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="0,1064,0,0"/>
 		</Grid>
-		<TextBlock HorizontalAlignment="Left" Height="58" Margin="231,563,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="LOGIN" VerticalAlignment="Top" Width="205" FontFamily="Microsoft JhengHei" FontSize="48"/>
+		<Grid x:Name="grid" HorizontalAlignment="Left" Height="416" Margin="728,354,-476,0" VerticalAlignment="Top" Width="388">
+			<Rectangle Fill="#FF949CAC" Stroke="Black"/>
+			<Path Data="M67.3335,26.001 L22.333,117.001 L112.334,117.001 z M67.667,1 L134.334,129.667 L1,129.667 z" Fill="#FF00457B" HorizontalAlignment="Center" Height="78.667" Stretch="Fill" Stroke="Black" StrokeThickness="2" UseLayoutRounding="False" VerticalAlignment="Center" Width="92.334" Margin="0,-98,0,0"/>
+			<TextBlock HorizontalAlignment="Center" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Wrong Login or passworld" VerticalAlignment="Top" Width="336" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei Light" Foreground="Black" FontSize="26.667" Margin="0,267,0,0"/>
+			<Button Content="Ok" HorizontalAlignment="Center" Height="42" Style="{StaticResource Button-Sketch}" VerticalAlignment="Center" Width="122" Margin="0,283,0,0" FontFamily="/Imap.Screens;component/Fonts/Fonts.zip#Microsoft YaHei Light">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<pi:ActivateStateAction TargetState="NoError"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Button>
+		</Grid>
 	</Grid>
 </UserControl>

@@ -277,13 +277,6 @@
     </Connection>
     <Connection>
       <Source>ImapScreens.Screen_1_1</Source>
-      <Target>ImapScreens.Navigate_component</Target>
-      <Type>Composition</Type>
-      <TransitionType>None</TransitionType>
-      <VisualTag>1</VisualTag>
-    </Connection>
-    <Connection>
-      <Source>ImapScreens.Screen_1_1</Source>
       <Target>ImapScreens.IMAPLogo</Target>
       <Type>Composition</Type>
       <TransitionType>None</TransitionType>
@@ -337,6 +330,27 @@
       <Type>Composition</Type>
       <TransitionType>None</TransitionType>
       <VisualTag>1</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Screen_1_1</Source>
+      <Target>ImapScreens.Navigate_component</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Navigate_component</Source>
+      <Target>ImapScreens.Home_Logged</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>ImapScreens.Navigate_component</Source>
+      <Target>ImapScreens.Screen_1</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
     </Connection>
   </Connections>
   <PrototypeRevision>0</PrototypeRevision>

@@ -5,7 +5,7 @@
 -->
 <SampleData:BuildingSchedules xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.BuildingSchedules" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
   <SampleData:BuildingSchedules.Collection>
-    <SampleData:Item Ligne_1="ENSIMAG - 150M" Ligne_2="Open Until 20:00" Id_place="0" />
+    <SampleData:Item Ligne_1="ENSIMAG - 153M" Ligne_2="Open Until 20:00" Id_place="0" />
     <SampleData:Item Ligne_1="RU Bernave - 200M" Ligne_2="Closed Until 11:30" Id_place="1" />
     <SampleData:Item Ligne_1="BU Science - 400M" Ligne_2="Open until 21:30" Id_place="2" />
   </SampleData:BuildingSchedules.Collection>
