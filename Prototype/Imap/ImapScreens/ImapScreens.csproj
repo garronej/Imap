@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ExpressionBlendVersion>12.0.50429.0</ExpressionBlendVersion>
-    <ExpressionBlendVersion>12.0.50429.0</ExpressionBlendVersion>
+    <ExpressionBlendVersion>12.0.50320.0</ExpressionBlendVersion>
     <ProjectGuid>{4e1b1da5-8e7b-486d-b781-176e444a7f38}</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -226,6 +226,10 @@
     <Resource Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces_Files\image03.png" />
     <Resource Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces_Files\image04.png" />
     <Resource Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces_Files\image05.png" />
+    <Resource Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces_Files\snapshotBu1.jpg" />
+    <Resource Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces_Files\snapshotDiderot1.jpg" />
+    <Resource Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces_Files\snapshotEnsimag1.png" />
+    <Resource Include="SampleData\DatabaseOfPlaces\DatabaseOfPlaces_Files\snapshotImag1.jpg" />
     <Resource Include="SampleData\DatabasePlace\DatabasePlace_Files\image01.png" />
     <Resource Include="SampleData\DatabasePlace\DatabasePlace_Files\image02.png" />
     <Resource Include="SampleData\DatabasePlace\DatabasePlace_Files\image03.png" />
@@ -237,7 +241,6 @@
     <Folder Include="DataStore\DataStore\" />
     <Folder Include="DataStore\isOpen\" />
     <Folder Include="DataStore\State\" />
-    <Folder Include="SampleData\DatabasePlace\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Design\projectGuides.guides" />
