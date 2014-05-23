@@ -47,6 +47,10 @@ namespace Expression.Blend.SampleData.DatabaseOfPlaces
 		}
 	}
 
+	public class ItemCollection : System.Collections.ObjectModel.ObservableCollection<Item>
+	{ 
+	}
+
 	public class Item : INotifyPropertyChanged
 	{
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -59,9 +63,28 @@ namespace Expression.Blend.SampleData.DatabaseOfPlaces
 			}
 		}
 
-		private System.Windows.Media.ImageSource __0name = null;
+		private System.Windows.Media.ImageSource __1image = null;
 
-		public System.Windows.Media.ImageSource _0name
+		public System.Windows.Media.ImageSource _1image
+		{
+			get
+			{
+				return this.__1image;
+			}
+
+			set
+			{
+				if (this.__1image != value)
+				{
+					this.__1image = value;
+					this.OnPropertyChanged("_1image");
+				}
+			}
+		}
+
+		private string __0name = string.Empty;
+
+		public string _0name
 		{
 			get
 			{
@@ -74,25 +97,6 @@ namespace Expression.Blend.SampleData.DatabaseOfPlaces
 				{
 					this.__0name = value;
 					this.OnPropertyChanged("_0name");
-				}
-			}
-		}
-
-		private bool __1minimage = false;
-
-		public bool _1minimage
-		{
-			get
-			{
-				return this.__1minimage;
-			}
-
-			set
-			{
-				if (this.__1minimage != value)
-				{
-					this.__1minimage = value;
-					this.OnPropertyChanged("_1minimage");
 				}
 			}
 		}
@@ -230,9 +234,9 @@ namespace Expression.Blend.SampleData.DatabaseOfPlaces
 			}
 		}
 
-		private string __0idPlace = string.Empty;
+		private double __0idPlace = 0;
 
-		public string _0idPlace
+		public double _0idPlace
 		{
 			get
 			{
@@ -248,10 +252,6 @@ namespace Expression.Blend.SampleData.DatabaseOfPlaces
 				}
 			}
 		}
-	}
-
-	public class ItemCollection : System.Collections.ObjectModel.ObservableCollection<Item>
-	{ 
 	}
 #endif
 }

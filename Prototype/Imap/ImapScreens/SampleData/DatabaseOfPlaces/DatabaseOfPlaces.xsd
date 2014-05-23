@@ -17,8 +17,8 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="Item">
-    <xs:attribute name="_0name" type="tns:Basic-Image" />
-    <xs:attribute name="_1minimage" type="xs:boolean" />
+    <xs:attribute name="_1image" type="tns:Basic-Image" />
+    <xs:attribute blend:Format="Lorem ipsum" blend:FormatParameters="4,8" name="_0name" type="xs:string" />
     <xs:attribute blend:Format="Address" name="_2adress" type="xs:string" />
     <xs:attribute blend:FormatParameters="100,12" name="_3descriptionText" type="xs:string" />
     <xs:attribute blend:Format="Phone Number" name="phoneNumber" type="xs:string" />
@@ -26,7 +26,7 @@
     <xs:attribute name="Mercredi" type="xs:string" />
     <xs:attribute name="Samedi" type="xs:string" />
     <xs:attribute name="Dimanche" type="xs:string" />
-    <xs:attribute name="_0idPlace" type="xs:string" />
+    <xs:attribute blend:FormatParameters="2" name="_0idPlace" type="xs:double" />
   </xs:complexType>
   <xs:simpleType name="Basic-Image">
     <xs:restriction base="xs:anyURI" />
